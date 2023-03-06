@@ -2,9 +2,9 @@ package uk.scarfe.cocktails.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import uk.scarfe.cocktails.exception.RecipeNotFoundException;
+import uk.scarfe.cocktails.exceptions.RecipeNotFoundException;
 import uk.scarfe.cocktails.model.Recipe;
-import uk.scarfe.cocktails.repository.RecipeRepository;
+import uk.scarfe.cocktails.persistence.RecipeRepository;
 
 import java.util.List;
 

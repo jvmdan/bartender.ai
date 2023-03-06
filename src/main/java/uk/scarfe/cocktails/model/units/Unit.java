@@ -4,4 +4,6 @@ public interface Unit {
 
     Unit getDefaultUnit();
 
+    double getConversionFactor();
+
 }

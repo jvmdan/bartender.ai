@@ -1,4 +1,4 @@
-package uk.scarfe.cocktails.repository;
+package uk.scarfe.cocktails.persistence;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;

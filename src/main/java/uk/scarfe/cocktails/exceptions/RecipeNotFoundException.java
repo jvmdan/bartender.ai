@@ -1,4 +1,4 @@
-package uk.scarfe.cocktails.exception;
+package uk.scarfe.cocktails.exceptions;
 
 import lombok.AllArgsConstructor;
 
