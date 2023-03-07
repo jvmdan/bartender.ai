@@ -28,8 +28,8 @@ public class Controller {
 
     @GetMapping("/generate")
     Mono<Recipe> generate(@RequestParam String prompt) {
-        if (prompt == null || prompt.isBlank() || prompt.isEmpty()) {
-            throw new InvalidPromptException(prompt); // Fast fail!
+        if (prompt == null || prompt.isBlank() || prompt.isEmpty() || PromptUtils.isBanned(prompt)) {
+            throw new InvalidPromptException(prompt); // Reject invalid and/or banned prompts
         }
         final String request = PromptUtils.normalise(prompt);
         final String uuid = PromptUtils.uuid(request);

@@ -1,11 +1,18 @@
 package ai.bartender.utils;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 
 /**
  * The PromptUtils class provides a number of public static methods for dealing with original
  */
 public final class PromptUtils {
+
+    /**
+     * A list of words that will trigger a request to be rejected if any of the prompt contains a match.
+     */
+    private static final List<String> BANNED = Arrays.asList("TERROR", "SUICIDE");
 
     private PromptUtils() {
         // Private constructor to prevent instantiation of utility class.
@@ -46,7 +53,20 @@ public final class PromptUtils {
      */
     public static String uuid(String from) {
         // Using a "pretty" name rather than a UUID allows us to easily request a recipe from the RESTful API
-        return from.replace(" ", "-").replace("&", "and").toLowerCase(Locale.ROOT);
+        return from.replace(" ", "-")
+                .replace("&", "and")
+                .toLowerCase(Locale.ROOT);
+    }
+
+    /**
+     * Compare our prompt against the list of banned words, ensuring our prompt does not contain a match.
+     *
+     * @param prompt the prompt we wish to validate against the banned word list.
+     * @return true or false; does the prompt contain a match for a banned word?
+     */
+    public static boolean isBanned(String prompt) {
+        final String normalised = prompt.toUpperCase(Locale.ROOT);
+        return BANNED.stream().anyMatch(normalised::contains);
     }
 
 }
