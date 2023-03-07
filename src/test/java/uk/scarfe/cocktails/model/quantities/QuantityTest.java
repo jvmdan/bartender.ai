@@ -1,4 +1,4 @@
-package uk.scarfe.cocktails.model;
+package uk.scarfe.cocktails.model.quantities;
 
 import org.junit.jupiter.api.Test;
 import uk.scarfe.cocktails.model.quantities.Liquid;

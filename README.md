@@ -1,4 +1,4 @@
-# cocktails.ai
+# bartender.ai
 
 ## Introduction
 
@@ -19,6 +19,7 @@ This application is built upon Java 17 & Jakarta EE. Spring has been chosen as t
 
 ## Upcoming Changes
 
+* Add ability to convert between different units of measurement.
 * Deploy to cloud infrastructure for test & development.
 * Devise a suitable set of training data for the ML model.
 * Convert H2 database to Redis (or other data store).

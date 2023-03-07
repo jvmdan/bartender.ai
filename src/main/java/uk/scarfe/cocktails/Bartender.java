@@ -8,10 +8,10 @@ import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
 @Slf4j
-public class Cocktails {
+public class Bartender {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Cocktails.class, args);
+		SpringApplication.run(Bartender.class, args);
 	}
 
 	@EventListener(ApplicationReadyEvent.class)
