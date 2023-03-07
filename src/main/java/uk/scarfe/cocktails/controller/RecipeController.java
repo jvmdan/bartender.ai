@@ -12,13 +12,13 @@ import java.util.List;
 @RestController
 @RequestMapping("/recipes")
 @RequiredArgsConstructor
-public class RecipeController {
+public class RecipeController implements Controller<Recipe> {
 
     private final RecipeCache repository;
 
     @GetMapping("/")
     List<Recipe> all() {
-        return Collections.emptyList(); // FIXME
+        return repository.findAll().stream().toList();
     }
 
     @PostMapping("/")

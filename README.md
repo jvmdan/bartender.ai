@@ -15,7 +15,9 @@ Cocktails shall then be rated as good or bad by a real human being. If the cockt
 
 ## Technology Stack
 
-This application is built upon Java 17 & Jakarta EE. Spring has been chosen as the Inversion of Control (IoC) container, and WebFlux provides a RESTful API. The underlying database is currently H2.
+This application is built upon Java 17 & Jakarta EE. Spring has been chosen as the Inversion of Control (IoC) container, and Spring WebFlux provides a reactive RESTful API with an embedded Netty server. 
+
+Spring has been chosen as the dependency injection (DI) framework. Some might consider this to be heavyweight in comparison to other third-party DI frameworks (such as Dagger or Ajave). Whilst I would be inclined to agree, the intention of this project is to be fun & easy to work on. Some performance tweaks have been applied to improve efficiency where possible.
 
 ## Upcoming Changes
 
