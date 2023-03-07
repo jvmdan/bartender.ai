@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="#">Create</a></li>
+                <li role="presentation"><a href="#">Browse</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Bartender.ai</h3>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Create a cocktail</h1>
+        <p class="lead">Use machine learning (ML) to generate delicious cocktail recipes</p>
+        <form action="/generate" method="GET">
+            <div>
+                <input style="text-align:center;" name="prompt" id="prompt" class="form-control" placeholder="Prompt"/>
+            </div>
+            <div>
+                <br/>
+                <button class="btn btn-lg btn-success" role="button">Generate!</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-6">
+            <h4>How It Works</h4>
+            <p>
+                This application will attempt to learn what makes a good cocktail from classic cocktail recipes, and
+                it shall generate new recipe ideas based upon our training data & a user prompt.
+            </p>
+            <p>
+                The prompt can be anything you like. Try experimenting with weird & wonderful phrases, such as
+                <b>Mama's Kumquat</b> or <b>Danny Dyer's Chocolate Homunculus</b>.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <h4>Technology Stack</h4>
+            <p>
+                This application is built upon <b>Java 17</b> & Jakarta EE using the <b>Spring Framework</b> as
+                the Inversion of Control platform. The machine learning model is implemented using the <b>Java
+                Deep Learning</b> library, with an underlying <b>Redis</b> data store.
+            </p>
+            <p>
+                The RESTful API is implemented in <b>Spring WebFlux</b> and the accompanying front-end is written
+                in HTML using the <b>Bootstrap</b> toolkit.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Lovingly developed & curated by Daniel Scarfe over many sleepless nights.</p>
+    </footer>
+
+</div>
+</body>
+</html>
