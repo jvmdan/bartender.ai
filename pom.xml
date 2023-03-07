@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>uk.scarfe</groupId>
-    <artifactId>cocktail-ai</artifactId>
+    <artifactId>bartender-ai</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cocktail-ai</name>
+    <name>bartender-ai</name>
     <description>AI-based cocktail generation</description>
     <properties>
         <java.version>17</java.version>
