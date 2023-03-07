@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Profile;
 import uk.scarfe.cocktails.model.Ingredient;
 import uk.scarfe.cocktails.model.Quantity;
 import uk.scarfe.cocktails.model.Recipe;
+import uk.scarfe.cocktails.model.units.Count;
 import uk.scarfe.cocktails.model.units.Liquid;
 import uk.scarfe.cocktails.model.units.Mass;
 
@@ -21,12 +22,13 @@ public class RepositoryConfiguration {
     CommandLineRunner initialise(RecipeRepository repository) {
         return args -> {
 
+            // Preload the database with a number of "known-good" cocktail recipes.
             final Recipe mojito = new Recipe("Mojito")
-                    .addIngredient(new Ingredient("Lime Juice"), Quantity.of(10, Liquid.MILLILITRES))
-                    .addIngredient(new Ingredient("Mint"), Quantity.of(10, Mass.GRAMMES))
-                    .addIngredient(new Ingredient("Rum"), Quantity.of(35, Liquid.MILLILITRES))
-                    .addIngredient(new Ingredient("Sugar"), Quantity.of(5, Mass.GRAMMES))
-                    .addIngredient(new Ingredient("Soda"), Quantity.of(150, Liquid.MILLILITRES));
+                    .addIngredient(new Ingredient("Lime"), Quantity.of(1))
+                    .addIngredient(new Ingredient("Mint"), Quantity.of(1, Count.HANDFUL))
+                    .addIngredient(new Ingredient("White Rum"), Quantity.of(60, Liquid.MILLILITRES))
+                    .addIngredient(new Ingredient("Granulated Sugar"), Quantity.of(1, Count.TEASPOON))
+                    .addIngredient(new Ingredient("Soda Water"), Quantity.of(0, Count.TO_TASTE));
             log.info("Preloading " + repository.save(mojito));
 
             log.info("Preloading " + repository.save(new Recipe("Old Fashioned")));

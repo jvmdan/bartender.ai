@@ -1,6 +1,5 @@
 package uk.scarfe.cocktails.model.units;
 
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 /**
