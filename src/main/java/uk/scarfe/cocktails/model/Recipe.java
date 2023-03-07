@@ -22,6 +22,8 @@ public class Recipe {
     private List<Ingredient> ingredients;
     private List<Instruction> instructions;
 
+    private List<String> tags;
+
     public Recipe(String name) {
         this.name = name;
         this.ingredients = new ArrayList<>();
@@ -36,6 +38,18 @@ public class Recipe {
     public Recipe addInstruction(Instruction i) {
         this.instructions.add(i);
         return this;
+    }
+
+    public Recipe addTag(String s) {
+        this.tags.add(s);
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "'" + name + '\'' +
+                '}';
     }
 
 }

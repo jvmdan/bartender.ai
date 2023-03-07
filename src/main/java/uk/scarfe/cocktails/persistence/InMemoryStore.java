@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 @Profile("in-memory")
-public class RecipeCache implements DataStore<Recipe, Long> {
+public class InMemoryStore implements DataStore<Recipe, Long> {
 
     private final Map<Long, Recipe> cache = new ConcurrentHashMap<>();
 
