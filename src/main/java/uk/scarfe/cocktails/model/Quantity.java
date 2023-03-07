@@ -6,6 +6,8 @@ import uk.scarfe.cocktails.model.units.Liquid;
 import uk.scarfe.cocktails.model.units.Mass;
 import uk.scarfe.cocktails.model.units.Unit;
 
+import java.util.Objects;
+
 /**
  * The Quantity class represents an amount to be used within a cocktail recipe. This allows us to
  * identify how much of a given ingredient we require. Note that different recipes may specify
@@ -15,7 +17,6 @@ import uk.scarfe.cocktails.model.units.Unit;
  * @param <U> the unit type we are quantifying.
  */
 @Getter
-@EqualsAndHashCode
 public class Quantity<U extends Unit> {
 
     private final double amount;
@@ -46,6 +47,22 @@ public class Quantity<U extends Unit> {
         final double normalisedAmount = from.getAmount() / from.getUnit().getConversionFactor();
         final double newAmount = normalisedAmount * to.getConversionFactor();
         return new Quantity<>(newAmount, to);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Quantity<?> quantity = (Quantity<?>) o;
+        double normalised = amount / unit.getConversionFactor();
+        double normalisedOther = quantity.amount / quantity.getUnit().getConversionFactor();
+        return Double.compare(normalisedOther, normalised) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        double normalised = amount / unit.getConversionFactor();
+        return Objects.hash(normalised);
     }
 
 }
