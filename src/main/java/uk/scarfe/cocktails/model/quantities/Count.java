@@ -1,4 +1,4 @@
-package uk.scarfe.cocktails.model.units;
+package uk.scarfe.cocktails.model.quantities;
 
 /**
  * A Count is the most basic form of unit. When using the entirety of an ingredient, we can simply

@@ -1,4 +1,4 @@
-package uk.scarfe.cocktails.model.units;
+package uk.scarfe.cocktails.model.quantities;
 
 import lombok.RequiredArgsConstructor;
 

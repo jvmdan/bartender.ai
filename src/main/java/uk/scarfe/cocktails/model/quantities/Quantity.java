@@ -1,11 +1,7 @@
-package uk.scarfe.cocktails.model;
+package uk.scarfe.cocktails.model.quantities;
 
 import lombok.Getter;
 import lombok.ToString;
-import uk.scarfe.cocktails.model.units.Count;
-import uk.scarfe.cocktails.model.units.Liquid;
-import uk.scarfe.cocktails.model.units.Mass;
-import uk.scarfe.cocktails.model.units.Unit;
 
 import java.util.Objects;
 

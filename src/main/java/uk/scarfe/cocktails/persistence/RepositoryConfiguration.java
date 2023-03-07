@@ -6,11 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import uk.scarfe.cocktails.model.Ingredient;
-import uk.scarfe.cocktails.model.Quantity;
+import uk.scarfe.cocktails.model.quantities.Quantity;
 import uk.scarfe.cocktails.model.Recipe;
-import uk.scarfe.cocktails.model.units.Count;
-import uk.scarfe.cocktails.model.units.Liquid;
-import uk.scarfe.cocktails.model.units.Mass;
+import uk.scarfe.cocktails.model.quantities.Count;
+import uk.scarfe.cocktails.model.quantities.Liquid;
 
 @Configuration
 @Profile("h2")

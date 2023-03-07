@@ -1,8 +1,9 @@
 package uk.scarfe.cocktails.model;
 
 import org.junit.jupiter.api.Test;
-import uk.scarfe.cocktails.model.units.Liquid;
-import uk.scarfe.cocktails.model.units.Mass;
+import uk.scarfe.cocktails.model.quantities.Liquid;
+import uk.scarfe.cocktails.model.quantities.Mass;
+import uk.scarfe.cocktails.model.quantities.Quantity;
 
 import static org.junit.jupiter.api.Assertions.*;
 

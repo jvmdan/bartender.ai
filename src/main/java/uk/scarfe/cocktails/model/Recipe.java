@@ -3,10 +3,7 @@ package uk.scarfe.cocktails.model;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import uk.scarfe.cocktails.model.quantities.Quantity;
 
 /**
  * A Recipe represents a known-good cocktail solution, typically sourced from an online reference.
