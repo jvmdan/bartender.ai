@@ -4,8 +4,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import uk.scarfe.cocktails.exceptions.RecipeNotFoundException;
 import uk.scarfe.cocktails.model.Recipe;
-import uk.scarfe.cocktails.persistence.RecipeRepository;
+import uk.scarfe.cocktails.persistence.RecipeCache;
 
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -13,11 +14,11 @@ import java.util.List;
 @RequiredArgsConstructor
 public class RecipeController {
 
-    private final RecipeRepository repository;
+    private final RecipeCache repository;
 
     @GetMapping("/")
     List<Recipe> all() {
-        return repository.findAll();
+        return Collections.emptyList(); // FIXME
     }
 
     @PostMapping("/")

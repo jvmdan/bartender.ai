@@ -1,9 +1,10 @@
 package uk.scarfe.cocktails.model;
 
-import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import uk.scarfe.cocktails.model.quantities.Quantity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A Recipe represents a known-good cocktail solution, typically sourced from an online reference.
@@ -12,21 +13,28 @@ import uk.scarfe.cocktails.model.quantities.Quantity;
  *
  * @author Daniel Scarfe
  */
-@Entity
-@Table(name = "recipes")
 @NoArgsConstructor
 @Data
 public class Recipe {
 
-    private @Id @GeneratedValue @Column(name = "id") Long id;
+    private Long id;
     private String name;
+    private List<Ingredient> ingredients;
+    private List<Instruction> instructions;
 
     public Recipe(String name) {
         this.name = name;
+        this.ingredients = new ArrayList<>();
+        this.instructions = new ArrayList<>();
     }
 
-    public Recipe addIngredient(Ingredient i, Quantity<?> q) {
-        // FIXME | Does nothing until we add the logic.
+    public Recipe addIngredient(Ingredient i) {
+        this.ingredients.add(i);
+        return this;
+    }
+
+    public Recipe addInstruction(Instruction i) {
+        this.instructions.add(i);
         return this;
     }
 
