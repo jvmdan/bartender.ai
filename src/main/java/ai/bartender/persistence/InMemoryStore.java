@@ -1,8 +1,7 @@
 package ai.bartender.persistence;
 
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
 import ai.bartender.model.Recipe;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.Map;
@@ -10,7 +9,6 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Service
-@Profile("in-memory")
 public class InMemoryStore implements DataStore<Recipe, String> {
 
     private final Map<String, Recipe> cache = new ConcurrentHashMap<>();

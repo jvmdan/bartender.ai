@@ -32,15 +32,19 @@ public class Controller {
             throw new InvalidPromptException(prompt); // Reject invalid and/or banned prompts
         }
         final String request = PromptUtils.normalise(prompt);
-        final String uuid = PromptUtils.uuid(request);
-        final Optional<Recipe> existing = dataStore.findById(uuid);
+        final Optional<Recipe> existing = dataStore.findById(PromptUtils.uuid(request));
         if (existing.isPresent()) {
-            log.info("Retrieved existing recipe for \"{}\"", request);
-            return Mono.just(existing.get());
+            final Recipe r = existing.get();
+            log.info("Retrieved Recipe: \"{}\" [ingredients={}, directions={}]",
+                    request, r.getIngredients().size(), r.getDirections().size());
+            return Mono.just(r);
         } else {
-            log.info("Creating new recipe for \"{}\"", request);
-            final Generator curator = context.getBean(Generator.class);
-            return Mono.just(curator.create(uuid, request));
+            final Generator generator = context.getBean(Generator.class);
+            final Recipe r = generator.create(request);
+            dataStore.save(r);
+            log.info("Retrieved Recipe: \"{}\" [ingredients={}, directions={}]",
+                    request, r.getIngredients().size(), r.getDirections().size());
+            return Mono.just(r);
         }
     }
 

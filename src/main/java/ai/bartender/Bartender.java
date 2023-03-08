@@ -8,6 +8,7 @@ import ai.bartender.model.quantities.Quantity;
 import ai.bartender.persistence.DataStore;
 import ai.bartender.persistence.InMemoryStore;
 import lombok.extern.slf4j.Slf4j;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.BeansException;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -38,32 +39,12 @@ public class Bartender implements ApplicationContextAware {
     @EventListener(ApplicationReadyEvent.class)
     public void ready() {
         final InMemoryStore trainingData = context.getBean(InMemoryStore.class);
-        log.info("Initialised \"Bartender.ai\" with training data containing {} recipes", trainingData.count());
+        log.info("Initialised \"Bartender.ai\" with {} existing recipes", trainingData.count());
         log.info("Awaiting user prompt to generate new cocktail recipe...");
     }
 
-    @Bean
-    @Profile("in-memory")
-    CommandLineRunner initialise(DataStore<Recipe, String> store) {
-        return args -> {
-            // Preload the database with a number of "known-good" cocktail recipes.
-            final List<Recipe> preload = new ArrayList<>();
-            preload.add(new Recipe("Mojito")
-                    .addIngredient(new Ingredient("Lime", Quantity.of(1)))
-                    .addIngredient(new Ingredient("Mint", Quantity.of(1, Count.HANDFUL)))
-                    .addIngredient(new Ingredient("Scotch Whiskey", Quantity.of(60, Liquid.MILLILITRES)))
-                    .addIngredient(new Ingredient("Granulated Sugar", Quantity.of(1, Count.TEASPOON)))
-                    .addIngredient(new Ingredient("Soda Water", Quantity.of(0, Count.TO_TASTE))));
-            preload.add(new Recipe("Old Fashioned"));
-            preload.add(new Recipe("Bloody Mary"));
-            preload.add(new Recipe("Tequila Sunrise"));
-            preload.add(new Recipe("Long Island Iced Tea"));
-            preload.forEach(r -> log.debug("Loaded " + store.save(r) + " into " + store.getClass().getSimpleName()));
-        };
-    }
-
     @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    public void setApplicationContext(@NotNull ApplicationContext applicationContext) throws BeansException {
         this.context = applicationContext;
     }
 

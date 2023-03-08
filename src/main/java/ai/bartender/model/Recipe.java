@@ -4,10 +4,8 @@ import ai.bartender.utils.PromptUtils;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 /**
  * A Recipe represents a known-good cocktail solution, typically sourced from an online reference.
@@ -22,31 +20,26 @@ public class Recipe {
 
     private String id;
     private String name;
-    private List<Ingredient> ingredients;
-    private List<Instruction> instructions;
+    private String source;
+    private List<String> ingredients;
+    private List<String> directions;
 
-    private List<String> tags;
 
-    public Recipe(String name) {
+    public Recipe(String name, String source) {
         this.name = PromptUtils.normalise(name);
         this.id = PromptUtils.uuid(name);
+        this.source = source;
         this.ingredients = new ArrayList<>();
-        this.instructions = new ArrayList<>();
-        this.tags = new ArrayList<>();
+        this.directions = new ArrayList<>();
     }
 
-    public Recipe addIngredient(Ingredient i) {
-        this.ingredients.add(i);
+    public Recipe addIngredients(List<String> i) {
+        this.ingredients.addAll(i);
         return this;
     }
 
-    public Recipe addInstruction(Instruction i) {
-        this.instructions.add(i);
-        return this;
-    }
-
-    public Recipe addTag(String s) {
-        this.tags.add(s);
+    public Recipe addDirections(List<String> d) {
+        this.directions.addAll(d);
         return this;
     }
 
