@@ -1,0 +1,946 @@
+[
+  {
+    "name": "Mojito",
+    "source": "default",
+    "ingredients": [
+      "60ml white rum",
+      "30ml fresh lime juice",
+      "15ml simple syrup",
+      "8-10 fresh mint leaves",
+      "Soda water",
+      "Crushed ice"
+    ],
+    "directions": [
+      "1. In a cocktail shaker, muddle the fresh mint leaves with the lime juice and simple syrup until the mint is fragrant and slightly crushed.",
+      "2. Add the white rum and a handful of crushed ice to the shaker and shake until well combined.",
+      "3. Strain the mixture into a tall glass filled with ice.",
+      "4. Top up the glass with soda water and give it a gentle stir.",
+      "5. Garnish with a sprig of fresh mint and a lime wedge.",
+      "6. Enjoy your refreshing Mojito!"
+    ]
+  },
+  {
+    "name": "White Russian",
+    "source": "default",
+    "ingredients": [
+      "50ml vodka",
+      "25ml coffee liqueur",
+      "25ml heavy cream",
+      "Ice"
+    ],
+    "directions": [
+      "1. Fill a rocks glass with ice.",
+      "2. Add the vodka and coffee liqueur to the glass.",
+      "3. Stir gently to combine.",
+      "4. Pour the heavy cream over the top of the vodka and coffee liqueur.",
+      "5. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Old Fashioned",
+    "source": "default",
+    "ingredients": [
+      "60 ml bourbon whiskey",
+      "1 tsp sugar",
+      "2 dashes Angostura bitters",
+      "1 orange slice",
+      "1 maraschino cherry",
+      "ice cubes"
+    ],
+    "directions": [
+      "1. In an Old Fashioned glass, add the sugar and bitters.",
+      "2. Add a splash of water and stir until the sugar is dissolved.",
+      "3. Add a large ice cube to the glass.",
+      "4. Pour in the bourbon whiskey and stir until well combined.",
+      "5. Garnish with an orange slice and a maraschino cherry.",
+      "6. Serve and enjoy your classic Old Fashioned cocktail!"
+    ]
+  },
+  {
+    "name": "Sex On The Beach",
+    "source": "default",
+    "ingredients": [
+      "50ml vodka",
+      "25ml peach schnapps",
+      "50ml orange juice",
+      "50ml cranberry juice",
+      "1 slice of orange, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add the vodka, peach schnapps, orange juice, and cranberry juice to the shaker.",
+      "3. Shake well until chilled.",
+      "4. Strain the mixture into a tall glass filled with ice.",
+      "5. Garnish with a slice of orange.",
+      "6. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Espresso Martini",
+    "source": "default",
+    "ingredients": [
+      "50ml vodka",
+      "30ml freshly brewed espresso",
+      "20ml coffee liqueur",
+      "10ml simple syrup",
+      "Ice",
+      "Coffee beans, for garnish"
+    ],
+    "directions": [
+      "1. Brew a shot of espresso and let it cool down to room temperature.",
+      "2. Fill a cocktail shaker with ice.",
+      "3. Add the vodka, coffee liqueur, simple syrup, and cooled espresso to the shaker.",
+      "4. Shake vigorously for about 10 seconds.",
+      "5. Strain the cocktail into a chilled martini glass.",
+      "6. Garnish with a few coffee beans on top."
+    ]
+  },
+  {
+    "name": "New York Sour",
+    "source": "default",
+    "ingredients": [
+      "60 ml whiskey",
+      "30 ml lemon juice",
+      "15 ml simple syrup",
+      "15 ml red wine (preferably a full-bodied red)"
+    ],
+    "directions": [
+      "1. Fill a shaker with ice.",
+      "2. Add the whiskey, lemon juice, and simple syrup to the shaker.",
+      "3. Shake well until chilled.",
+      "4. Strain the mixture into a rocks glass filled with ice.",
+      "5. Gently pour the red wine over the back of a spoon held just above the drink's surface so it floats on top.",
+      "6. Garnish with a lemon twist and serve."
+    ]
+  },
+  {
+    "name": "Aperol Spritz",
+    "source": "default",
+    "ingredients": [
+      "60 ml Aperol",
+      "90 ml Prosecco",
+      "30 ml soda water",
+      "Ice",
+      "Orange slice, for garnish"
+    ],
+    "directions": [
+      "1. Fill a large wine glass with ice.",
+      "2. Add the Aperol and Prosecco to the glass.",
+      "3. Top with soda water and gently stir to combine.",
+      "4. Garnish with an orange slice and serve immediately."
+    ]
+  },
+  {
+    "name": "Martini",
+    "source": "default",
+    "ingredients": [
+      "60ml gin",
+      "15ml dry vermouth",
+      "Ice",
+      "Lemon twist or olive for garnish"
+    ],
+    "directions": [
+      "1. Fill a mixing glass or shaker with ice.",
+      "2. Pour in the gin and dry vermouth.",
+      "3. Stir for about 30 seconds until well chilled.",
+      "4. Strain the mixture into a chilled martini glass.",
+      "5. Garnish with a lemon twist or olive."
+    ]
+  },
+  {
+    "name": "Whiskey Sour",
+    "source": "default",
+    "ingredients": [
+      "60 ml whiskey",
+      "30 ml fresh lemon juice",
+      "15 ml simple syrup",
+      "Ice",
+      "Lemon twist, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add the whiskey, fresh lemon juice, and simple syrup to the shaker.",
+      "3. Shake vigorously for about 10-15 seconds, until the shaker is frosty and cold.",
+      "4. Strain the cocktail into a rocks glass filled with ice.",
+      "5. Garnish with a lemon twist."
+    ]
+  },
+  {
+    "name": "Tequila Sunrise",
+    "source": "default",
+    "ingredients": [
+      "60 ml tequila",
+      "120 ml orange juice",
+      "15 ml grenadine syrup",
+      "Ice cubes",
+      "Orange slice and cherry for garnish"
+    ],
+    "directions": [
+      "1. Fill a tall glass with ice cubes.",
+      "2. Pour in the tequila and orange juice.",
+      "3. Stir well to combine.",
+      "4. Slowly pour in the grenadine syrup over the back of a spoon so that it sinks to the bottom of the glass.",
+      "5. Garnish with an orange slice and a cherry.",
+      "6. Serve and enjoy your Tequila Sunrise!"
+    ]
+  },
+  {
+    "name": "Manhattan",
+    "source": "default",
+    "ingredients": [
+      "60 ml whiskey",
+      "30 ml sweet vermouth",
+      "2 dashes of Angostura bitters",
+      "Maraschino cherry for garnish",
+      "Ice"
+    ],
+    "directions": [
+      "1. Fill a mixing glass with ice.",
+      "2. Add the whiskey, sweet vermouth, and bitters to the mixing glass.",
+      "3. Stir the ingredients together until they are well combined and chilled.",
+      "4. Strain the cocktail into a chilled glass.",
+      "5. Garnish with a maraschino cherry.",
+      "6. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Mimosa",
+    "source": "default",
+    "ingredients": [
+      "90 ml champagne",
+      "60 ml freshly squeezed orange juice",
+      "10 ml triple sec",
+      "Ice cubes",
+      "Orange peel for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice cubes.",
+      "2. Add the champagne, freshly squeezed orange juice, and triple sec to the shaker.",
+      "3. Shake well for about 10 seconds to combine the ingredients.",
+      "4. Strain the mixture into a chilled champagne flute.",
+      "5. Garnish with a twist of orange peel.",
+      "6. Serve and enjoy your delicious Mimosa cocktail!"
+    ]
+  },
+  {
+    "name": "Black Russian",
+    "source": "default",
+    "ingredients": [
+      "60ml vodka",
+      "30ml coffee liqueur"
+    ],
+    "directions": [
+      "1. Fill a rocks glass with ice.",
+      "2. Add the vodka and coffee liqueur to the glass.",
+      "3. Stir gently until well combined.",
+      "4. Garnish with a cherry or a twist of orange peel, if desired.",
+      "5. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Snowball",
+    "source": "default",
+    "ingredients": [
+      "50 ml vodka",
+      "25 ml lime juice",
+      "25 ml simple syrup",
+      "50 ml sparkling water",
+      "1 egg white",
+      "Ice cubes",
+      "Coconut flakes (for garnish)"
+    ],
+    "directions": [
+      "1. In a cocktail shaker, combine vodka, lime juice, simple syrup, and egg white.",
+      "2. Add ice cubes to the shaker and shake vigorously for about 10 seconds.",
+      "3. Strain the mixture into a glass filled with ice cubes.",
+      "4. Top with sparkling water.",
+      "5. Garnish with coconut flakes."
+    ]
+  },
+  {
+    "name": "Cosmopolitan",
+    "source": "default",
+    "ingredients": [
+      "45 ml vodka",
+      "22.5 ml triple sec",
+      "22.5 ml cranberry juice",
+      "15 ml fresh lime juice",
+      "Ice cubes",
+      "Lime twist, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice cubes.",
+      "2. Add the vodka, triple sec, cranberry juice, and lime juice to the shaker.",
+      "3. Shake the ingredients vigorously for about 10-15 seconds.",
+      "4. Strain the mixture into a chilled martini glass.",
+      "5. Garnish the cocktail with a lime twist.",
+      "6. Serve and enjoy your delicious Cosmopolitan!"
+    ]
+  },
+  {
+    "name": "Negroni",
+    "source": "default",
+    "ingredients": [
+      "30 ml gin",
+      "30 ml sweet vermouth",
+      "30 ml Campari",
+      "Orange peel for garnish"
+    ],
+    "directions": [
+      "1. Fill a mixing glass with ice.",
+      "2. Add gin, sweet vermouth, and Campari to the mixing glass.",
+      "3. Stir until well-chilled.",
+      "4. Strain into a rocks glass filled with ice.",
+      "5. Garnish with a twist of orange peel."
+    ]
+  },
+  {
+    "name": "Tom Collins",
+    "source": "default",
+    "ingredients": [
+      "60 ml gin",
+      "30 ml fresh lemon juice",
+      "15 ml simple syrup",
+      "Soda water",
+      "Ice",
+      "Lemon slice, for garnish"
+    ],
+    "directions": [
+      "1. Fill a Collins glass with ice.",
+      "2. Pour in the gin, fresh lemon juice, and simple syrup.",
+      "3. Stir well to combine.",
+      "4. Top up the glass with soda water and stir again.",
+      "5. Garnish with a lemon slice and serve."
+    ]
+  },
+  {
+    "name": "Cuba Libre",
+    "source": "default",
+    "ingredients": [
+      "60 ml white rum",
+      "120 ml cola",
+      "15 ml fresh lime juice",
+      "Ice",
+      "Lime wedge, for garnish"
+    ],
+    "directions": [
+      "1. Fill a highball glass with ice.",
+      "2. Add the white rum and fresh lime juice to the glass.",
+      "3. Top with cola and stir gently.",
+      "4. Garnish with a lime wedge and serve."
+    ]
+  },
+  {
+    "name": "Daiquiri",
+    "source": "default",
+    "ingredients": [
+      "60ml white rum",
+      "30ml freshly squeezed lime juice",
+      "15ml simple syrup",
+      "Ice cubes",
+      "Lime wheel, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice cubes.",
+      "2. Add the white rum, lime juice, and simple syrup to the shaker.",
+      "3. Shake well until chilled.",
+      "4. Strain the mixture into a chilled cocktail glass.",
+      "5. Garnish with a lime wheel."
+    ]
+  },
+  {
+    "name": "Screwdriver",
+    "source": "default",
+    "ingredients": [
+      "60 ml vodka",
+      "120 ml orange juice",
+      "Ice"
+    ],
+    "directions": [
+      "1. Fill a highball glass with ice.",
+      "2. Pour in the vodka and orange juice.",
+      "3. Stir well.",
+      "4. Garnish with a slice of orange, if desired.",
+      "5. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Sazerac",
+    "source": "default",
+    "ingredients": [
+      "60 ml rye whiskey",
+      "10 ml absinthe",
+      "5 ml simple syrup",
+      "2 dashes Peychaud's bitters",
+      "1 lemon peel"
+    ],
+    "directions": [
+      "1. Chill an Old Fashioned glass by filling it with ice and water.",
+      "2. In a separate mixing glass, add the rye whiskey, simple syrup, and Peychaud's bitters.",
+      "3. Fill the mixing glass with ice and stir until well chilled.",
+      "4. Discard the ice and water from the Old Fashioned glass, and rinse it with absinthe, making sure to coat the entire inside of the glass.",
+      "5. Strain the cocktail into the absinthe-rinsed glass.",
+      "6. Express the oils from the lemon peel over the drink, and use it as a garnish."
+    ]
+  },
+  {
+    "name": "Paloma",
+    "source": "default",
+    "ingredients": [
+      "60 ml tequila",
+      "30 ml fresh lime juice",
+      "120 ml grapefruit soda",
+      "1 pinch of salt",
+      "1 slice of grapefruit for garnish"
+    ],
+    "directions": [
+      "1. Fill a tall glass with ice cubes.",
+      "2. Add tequila and lime juice to the glass.",
+      "3. Top up with grapefruit soda.",
+      "4. Add a pinch of salt and stir gently.",
+      "5. Garnish with a slice of grapefruit.",
+      "6. Serve and enjoy your Paloma cocktail!"
+    ]
+  },
+  {
+    "name": "Moscow Mule",
+    "source": "default",
+    "ingredients": [
+      "60 ml vodka",
+      "120 ml ginger beer",
+      "20 ml lime juice",
+      "Ice",
+      "Lime wedge, for garnish"
+    ],
+    "directions": [
+      "1. Fill a copper mug or highball glass with ice.",
+      "2. Add the vodka and lime juice to the glass.",
+      "3. Top up the glass with ginger beer.",
+      "4. Stir gently to combine all the ingredients.",
+      "5. Garnish with a lime wedge and serve immediately."
+    ]
+  },
+  {
+    "name": "Sidecar",
+    "source": "default",
+    "ingredients": [
+      "45ml cognac",
+      "22.5ml triple sec",
+      "22.5ml fresh lemon juice",
+      "Ice",
+      "Lemon twist, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add cognac, triple sec, and fresh lemon juice to the shaker.",
+      "3. Shake well until the shaker is frosty.",
+      "4. Strain the mixture into a chilled cocktail glass.",
+      "5. Garnish with a lemon twist."
+    ]
+  },
+  {
+    "name": "Martinez",
+    "source": "default",
+    "ingredients": [
+      "60ml gin",
+      "30ml sweet vermouth",
+      "15ml maraschino liqueur",
+      "2 dashes orange bitters",
+      "Orange peel, for garnish"
+    ],
+    "directions": [
+      "1. Fill a mixing glass with ice.",
+      "2. Add the gin, sweet vermouth, maraschino liqueur, and orange bitters.",
+      "3. Stir well for about 20 seconds until the mixture is well chilled.",
+      "4. Strain the cocktail into a chilled coupe glass.",
+      "5. Garnish with a twist of orange peel."
+    ]
+  },
+  {
+    "name": "Pisco Sour",
+    "source": "default",
+    "ingredients": [
+      "60 ml Pisco",
+      "30 ml fresh lime juice",
+      "15 ml simple syrup",
+      "1 egg white",
+      "Angostura bitters",
+      "Ice"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add the Pisco, fresh lime juice, simple syrup, and egg white to the shaker.",
+      "3. Shake vigorously for about 10-15 seconds.",
+      "4. Strain the mixture into a glass.",
+      "5. Add a few drops of Angostura bitters on top of the foam.",
+      "6. Garnish with a slice of lime or a cherry, if desired.",
+      "7. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "French 75",
+    "source": "default",
+    "ingredients": [
+      "45 ml gin",
+      "22.5 ml fresh lemon juice",
+      "15 ml simple syrup (1:1 sugar and water)",
+      "60 ml sparkling wine",
+      "Lemon twist, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add the gin, lemon juice, and simple syrup to the shaker.",
+      "3. Shake well until chilled.",
+      "4. Strain the mixture into a champagne flute or coupe glass.",
+      "5. Top with sparkling wine.",
+      "6. Garnish with a lemon twist."
+    ]
+  },
+  {
+    "name": "Mint Julep",
+    "source": "default",
+    "ingredients": [
+      "60ml bourbon",
+      "15ml simple syrup",
+      "8-10 fresh mint leaves",
+      "Crushed ice"
+    ],
+    "directions": [
+      "1. In a julep cup or highball glass, muddle the mint leaves and simple syrup together until the mint is fragrant.",
+      "2. Fill the glass with crushed ice.",
+      "3. Pour the bourbon over the ice and stir gently until the glass is frosted on the outside.",
+      "4. Garnish with a sprig of fresh mint."
+    ]
+  },
+  {
+    "name": "Last Word",
+    "source": "default",
+    "ingredients": [
+      "30 ml gin",
+      "30 ml green Chartreuse",
+      "30 ml maraschino liqueur",
+      "30 ml fresh lime juice",
+      "Ice",
+      "Lime wheel, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add the gin, green Chartreuse, maraschino liqueur, and fresh lime juice to the shaker.",
+      "3. Shake well for about 10-15 seconds.",
+      "4. Strain the mixture into a chilled cocktail glass.",
+      "5. Garnish with a lime wheel.",
+      "6. Serve and enjoy your Last Word cocktail!"
+    ]
+  },
+  {
+    "name": "Irish Coffee",
+    "source": "default",
+    "ingredients": [
+      "50ml Irish whiskey",
+      "100ml hot coffee",
+      "10ml simple syrup",
+      "20ml heavy cream"
+    ],
+    "directions": [
+      "1. Brew a cup of hot coffee and set it aside.",
+      "2. In a separate glass, add the Irish whiskey and simple syrup.",
+      "3. Pour the hot coffee into the glass and stir to combine.",
+      "4. In a separate container, shake the heavy cream until it becomes slightly thickened.",
+      "5. Gently pour the cream over the back of a spoon onto the top of the coffee mixture, allowing it to float on top.",
+      "6. Serve hot and enjoy your delicious Irish Coffee!"
+    ]
+  },
+  {
+    "name": "Gin Fizz",
+    "source": "default",
+    "ingredients": [
+      "60 ml gin",
+      "30 ml fresh lemon juice",
+      "15 ml simple syrup",
+      "60 ml soda water",
+      "Ice",
+      "Lemon twist, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add the gin, fresh lemon juice, and simple syrup to the shaker.",
+      "3. Shake the mixture vigorously for about 10-15 seconds.",
+      "4. Strain the mixture into a tall glass filled with ice.",
+      "5. Top the glass with soda water and gently stir.",
+      "6. Garnish with a lemon twist and serve immediately."
+    ]
+  },
+  {
+    "name": "Bloody Mary",
+    "source": "default",
+    "ingredients": [
+      "60 ml vodka",
+      "120 ml tomato juice",
+      "15 ml fresh lemon juice",
+      "1 tsp Worcestershire sauce",
+      "1 tsp hot sauce (such as Tabasco)",
+      "1/4 tsp celery salt",
+      "Pinch of black pepper",
+      "Ice",
+      "Celery stalk and lemon wedge, for garnish"
+    ],
+    "directions": [
+      "1. Fill a shaker with ice.",
+      "2. Add the vodka, tomato juice, lemon juice, Worcestershire sauce, hot sauce, celery salt, and black pepper.",
+      "3. Shake the mixture vigorously for about 10 seconds.",
+      "4. Strain the mixture into a tall glass filled with ice.",
+      "5. Garnish with a celery stalk and lemon wedge.",
+      "6. Serve and enjoy your delicious Bloody Mary cocktail!"
+    ]
+  },
+  {
+    "name": "Gimlet",
+    "source": "default",
+    "ingredients": [
+      "60ml gin",
+      "30ml fresh lime juice",
+      "15ml simple syrup",
+      "Ice",
+      "Lime wheel for garnish"
+    ],
+    "directions": [
+      "1. Fill a shaker with ice.",
+      "2. Add gin, fresh lime juice, and simple syrup to the shaker.",
+      "3. Shake well until the shaker is frosty.",
+      "4. Strain the mixture into a chilled cocktail glass.",
+      "5. Garnish with a lime wheel."
+    ]
+  },
+  {
+    "name": "Margarita",
+    "source": "default",
+    "ingredients": [
+      "60 ml tequila",
+      "30 ml lime juice",
+      "15 ml Cointreau or triple sec",
+      "15 ml simple syrup",
+      "Salt for rimming the glass",
+      "Lime wedge for garnish"
+    ],
+    "directions": [
+      "1. Rim a cocktail glass with salt by rubbing a lime wedge around the rim of the glass and then dipping it into a small dish of salt.",
+      "2. Fill a cocktail shaker with ice.",
+      "3. Add tequila, lime juice, Cointreau or triple sec, and simple syrup to the shaker.",
+      "4. Shake vigorously for about 10 seconds.",
+      "5. Strain the mixture into the salt-rimmed glass filled with ice.",
+      "6. Garnish with a lime wedge and serve."
+    ]
+  },
+  {
+    "name": "Boulevardier",
+    "source": "default",
+    "ingredients": [
+      "30 ml bourbon whiskey",
+      "30 ml sweet vermouth",
+      "30 ml Campari",
+      "Orange peel, for garnish"
+    ],
+    "directions": [
+      "1. Fill a mixing glass with ice.",
+      "2. Add the bourbon, sweet vermouth, and Campari.",
+      "3. Stir until well chilled, about 30 seconds.",
+      "4. Strain the mixture into a chilled glass filled with ice.",
+      "5. Garnish with a twist of orange peel."
+    ]
+  },
+  {
+    "name": "Dark & Stormy",
+    "source": "default",
+    "ingredients": [
+      "60 ml dark rum",
+      "30 ml blackberry liqueur",
+      "15 ml lime juice",
+      "15 ml simple syrup",
+      "2 dashes of aromatic bitters",
+      "Ice",
+      "Blackberries and lime wedges for garnish"
+    ],
+    "directions": [
+      "1. In a cocktail shaker, combine the dark rum, blackberry liqueur, lime juice, simple syrup, and aromatic bitters.",
+      "2. Add ice to the shaker and shake vigorously for 10-15 seconds.",
+      "3. Strain the cocktail into a rocks glass filled with ice.",
+      "4. Garnish with fresh blackberries and a lime wedge.",
+      "5. Enjoy your delicious and refreshing \"Dark\" cocktail!"
+    ]
+  },
+  {
+    "name": "Long Island Iced Tea",
+    "source": "default",
+    "ingredients": [
+      "30ml vodka",
+      "30ml gin",
+      "30ml white rum",
+      "30ml tequila",
+      "30ml triple sec",
+      "30ml lemon juice",
+      "15ml simple syrup",
+      "60ml cola",
+      "Ice cubes",
+      "Lemon wedge, for garnish"
+    ],
+    "directions": [
+      "1. Fill a shaker with ice cubes.",
+      "2. Add the vodka, gin, white rum, tequila, triple sec, lemon juice, and simple syrup to the shaker.",
+      "3. Shake vigorously for about 10 seconds.",
+      "4. Strain the mixture into a tall glass filled with ice cubes.",
+      "5. Top up the glass with cola.",
+      "6. Give the drink a quick stir.",
+      "7. Garnish with a lemon wedge and serve."
+    ]
+  },
+  {
+    "name": "Kir Royale",
+    "source": "default",
+    "ingredients": [
+      "30 ml crème de cassis",
+      "120 ml champagne",
+      "Fresh raspberries, for garnish"
+    ],
+    "directions": [
+      "1. Chill a champagne flute in the freezer for 5-10 minutes.",
+      "2. Pour the crème de cassis into the chilled flute.",
+      "3. Slowly pour the champagne into the flute, taking care not to let it overflow.",
+      "4. Gently stir the cocktail with a bar spoon to combine the ingredients.",
+      "5. Garnish with a few fresh raspberries and serve immediately."
+    ]
+  },
+  {
+    "name": "Mai Tai",
+    "source": "default",
+    "ingredients": [
+      "60ml dark rum",
+      "30ml fresh lime juice",
+      "15ml orange curaçao",
+      "15ml orgeat syrup",
+      "Ice",
+      "Mint sprig and lime wheel for garnish"
+    ],
+    "directions": [
+      "1. Fill a shaker with ice.",
+      "2. Pour in the dark rum, fresh lime juice, orange curaçao, and orgeat syrup.",
+      "3. Shake well until the outside of the shaker is frosty.",
+      "4. Strain the mixture into a glass filled with ice.",
+      "5. Garnish with a mint sprig and lime wheel."
+    ]
+  },
+  {
+    "name": "Bellini",
+    "source": "default",
+    "ingredients": [
+      "100ml Prosecco",
+      "50ml peach puree",
+      "1 tsp sugar",
+      "1 peach, sliced",
+      "ice cubes"
+    ],
+    "directions": [
+      "1. In a blender, puree a fresh peach until smooth.",
+      "2. Add the peach puree and sugar to a cocktail shaker with ice and shake well.",
+      "3. Strain the mixture into a chilled champagne flute.",
+      "4. Top up the glass with Prosecco.",
+      "5. Garnish with a slice of fresh peach and serve."
+    ]
+  },
+  {
+    "name": "Pina Colada",
+    "source": "default",
+    "ingredients": [
+      "60ml white rum",
+      "120ml pineapple juice",
+      "60ml coconut cream",
+      "15ml lime juice",
+      "Pineapple wedge and/or maraschino cherry for garnish"
+    ],
+    "directions": [
+      "1. Fill a blender with ice cubes.",
+      "2. Add the white rum, pineapple juice, coconut cream, and lime juice to the blender.",
+      "3. Blend until smooth and creamy.",
+      "4. Pour the mixture into a glass.",
+      "5. Garnish with a pineapple wedge and/or maraschino cherry.",
+      "6. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Greyhound",
+    "source": "default",
+    "ingredients": [
+      "60ml grapefruit juice",
+      "60ml vodka",
+      "Ice",
+      "Grapefruit wedge, for garnish"
+    ],
+    "directions": [
+      "1. Fill a glass with ice.",
+      "2. Pour in the grapefruit juice and vodka.",
+      "3. Stir gently to combine.",
+      "4. Garnish with a grapefruit wedge.",
+      "5. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Strawberry Mojito",
+    "source": "default",
+    "ingredients": [
+      "60 ml white rum",
+      "30 ml fresh lime juice",
+      "20 ml simple syrup",
+      "6-8 fresh strawberries, hulled and sliced",
+      "10 fresh mint leaves",
+      "Soda water",
+      "Ice"
+    ],
+    "directions": [
+      "1. In a cocktail shaker, muddle the sliced strawberries and mint leaves together until they are well mashed and fragrant.",
+      "2. Add the white rum, fresh lime juice, and simple syrup to the shaker.",
+      "3. Fill the shaker with ice and shake well until the ingredients are well combined and chilled.",
+      "4. Strain the mixture into a tall glass filled with ice.",
+      "5. Top up the glass with soda water.",
+      "6. Garnish with a fresh strawberry and mint sprig.",
+      "7. Serve and enjoy your refreshing Strawberry Mojito!"
+    ]
+  },
+  {
+    "name": "Passionfruit Mojito",
+    "source": "default",
+    "ingredients": [
+      "60 ml white rum",
+      "30 ml fresh lime juice",
+      "30 ml passionfruit puree",
+      "15 ml simple syrup",
+      "8-10 fresh mint leaves",
+      "Soda water",
+      "Ice"
+    ],
+    "directions": [
+      "1. In a cocktail shaker, muddle the mint leaves with the lime juice and simple syrup.",
+      "2. Add the white rum and passionfruit puree to the shaker, and fill with ice.",
+      "3. Shake well for about 10-15 seconds.",
+      "4. Strain the mixture into a tall glass filled with ice.",
+      "5. Top with soda water and stir gently.",
+      "6. Garnish with a sprig of mint and a slice of lime, and serve."
+    ]
+  },
+  {
+    "name": "Hazelnut Espresso Martini",
+    "source": "default",
+    "ingredients": [
+      "45ml vodka",
+      "30ml espresso",
+      "15ml hazelnut liqueur",
+      "10ml simple syrup",
+      "Ice",
+      "Hazelnuts for garnish"
+    ],
+    "directions": [
+      "1. Add vodka, espresso, hazelnut liqueur, and simple syrup to a cocktail shaker.",
+      "2. Fill the shaker with ice.",
+      "3. Shake vigorously for about 10 seconds.",
+      "4. Strain the mixture into a chilled martini glass.",
+      "5. Garnish with a few hazelnuts on top.",
+      "6. Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Cherry Sour",
+    "source": "default",
+    "ingredients": [
+      "60 ml of gin",
+      "30 ml of fresh lemon juice",
+      "15 ml of cherry liqueur",
+      "10 ml of simple syrup",
+      "1 egg white",
+      "3-4 cherries",
+      "Ice"
+    ],
+    "directions": [
+      "1. In a cocktail shaker, muddle the cherries until they are broken down.",
+      "2. Add the gin, lemon juice, cherry liqueur, simple syrup, and egg white to the shaker.",
+      "3. Fill the shaker with ice and shake vigorously for about 15 seconds.",
+      "4. Strain the mixture into a glass filled with fresh ice.",
+      "5. Garnish with a cherry and serve."
+    ]
+  },
+  {
+    "name": "Amaretto Cherry Sour",
+    "source": "default",
+    "ingredients": [
+      "50 ml amaretto liqueur",
+      "30 ml fresh lemon juice",
+      "20 ml cherry syrup (you can use the syrup from a jar of maraschino cherries)",
+      "1 egg white",
+      "Ice",
+      "Maraschino cherries, for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add the amaretto liqueur, fresh lemon juice, cherry syrup, and egg white to the shaker.",
+      "3. Shake vigorously for about 10-15 seconds until the egg white is frothy.",
+      "4. Strain the cocktail into a glass filled with ice.",
+      "5. Garnish with a maraschino cherry on top."
+    ]
+  },
+  {
+    "name": "Bramble",
+    "source": "default",
+    "ingredients": [
+      "60 ml gin",
+      "30 ml fresh lemon juice",
+      "15 ml simple syrup",
+      "15 ml crème de mure (blackberry liqueur)",
+      "Fresh blackberries, for garnish",
+      "Crushed ice"
+    ],
+    "directions": [
+      "1. Fill a rocks glass with crushed ice.",
+      "2. In a cocktail shaker, combine the gin, lemon juice, and simple syrup. Add ice and shake vigorously for about 10 seconds.",
+      "3. Strain the mixture over the ice in the rocks glass.",
+      "4. Drizzle the crème de mure over the top of the drink.",
+      "5. Garnish with fresh blackberries and serve with a straw."
+    ]
+  },
+  {
+    "name": "Spicy Paloma",
+    "source": "default",
+    "ingredients": [
+      "60 ml tequila",
+      "30 ml fresh lime juice",
+      "15 ml agave syrup",
+      "90 ml grapefruit juice",
+      "1 jalapeño pepper, sliced",
+      "Salt for rimming",
+      "Grapefruit wedge for garnish"
+    ],
+    "directions": [
+      "1. Rim a highball glass with salt by rubbing a grapefruit wedge around the rim and dipping it in salt.",
+      "2. In a shaker, muddle 2-3 slices of jalapeño pepper.",
+      "3. Add tequila, fresh lime juice, agave syrup, and grapefruit juice to the shaker.",
+      "4. Fill the shaker with ice and shake vigorously for about 10-15 seconds.",
+      "5. Strain the cocktail into the salt-rimmed highball glass filled with ice.",
+      "6. Garnish with a grapefruit wedge and a slice of jalapeño pepper."
+    ]
+  },
+  {
+    "name": "Cranberry Whiskey Sour",
+    "source": "default",
+    "ingredients": [
+      "60 ml whiskey",
+      "30 ml cranberry juice",
+      "15 ml fresh lemon juice",
+      "15 ml simple syrup",
+      "Ice",
+      "Fresh cranberries and lemon slices for garnish"
+    ],
+    "directions": [
+      "1. Fill a cocktail shaker with ice.",
+      "2. Add the whiskey, cranberry juice, fresh lemon juice, and simple syrup to the shaker.",
+      "3. Shake well for about 10-15 seconds.",
+      "4. Strain the mixture into a glass filled with ice.",
+      "5. Garnish with fresh cranberries and lemon slices."
+    ]
+  }
+]

@@ -48,6 +48,8 @@ public class OpenAi implements Ai, InitializingBean {
     public void afterPropertiesSet() {
         if (!SUPPORTED_MODELS.contains(model.toLowerCase(Locale.ROOT))) {
             throw new IllegalArgumentException("Unsupported OpenAI model specified: " + model);
+        } else if (token.isBlank()) {
+            throw new IllegalArgumentException("Unable to connect to OpenAI. You must specify an API token!");
         } else {
             this.service = new OpenAiService(token, timeout);
             log.info("Configured OpenAI with model: {} [timeout={}s]", model, timeout.getSeconds());

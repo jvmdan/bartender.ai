@@ -1,9 +1,7 @@
 package ai.bartender.model;
 
 import ai.bartender.utils.PromptUtils;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -22,7 +20,9 @@ import java.util.List;
 @Data
 public class Recipe {
 
-    @GeneratedValue @Id
+    @GeneratedValue
+    @Id
+    @Column(name = "id")
     private Long id;
     private String name;
     private String source;
