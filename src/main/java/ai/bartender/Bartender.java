@@ -11,7 +11,10 @@ import org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Description;
 import org.springframework.context.event.EventListener;
+import org.thymeleaf.spring6.SpringTemplateEngine;
 
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = {JacksonAutoConfiguration.class})

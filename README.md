@@ -21,13 +21,6 @@ Spring has been chosen as the dependency injection (DI) framework. Some might co
 
 ## Upcoming Changes
 
-* Add ability to convert between different units of measurement.
 * Deploy to cloud infrastructure for test & development.
-* Devise a suitable set of training data for the ML model.
 * Convert H2 database to Redis (or other data store).
-* Experiment with generating recipes using JDL.
-* Add ability for users to rate created recipes.
-
-## Known Issues
-
-Almost everything is undeveloped at this point. At some point, I shall start to document known issues. For now, this merely serves as a reminder to write something here one day.
+* Implement alternative to OpenAI service based in Java / Python.

@@ -1,7 +1,8 @@
 package ai.bartender.controller;
 
-import ai.bartender.exceptions.InvalidPromptException;
+import ai.bartender.exceptions.BannedPromptException;
 import ai.bartender.exceptions.NotFoundException;
+import ai.bartender.exceptions.RecipeCreationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -16,12 +17,19 @@ import reactor.core.publisher.Mono;
  * @author Daniel Scarfe
  */
 @ControllerAdvice
-class ErrorHandling {
+class ViewAdvice {
 
     @ResponseBody
-    @ExceptionHandler(InvalidPromptException.class)
+    @ExceptionHandler(BannedPromptException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    Mono<String> invalidPrompt(InvalidPromptException ex) {
+    Mono<String> bannedPrompt(BannedPromptException ex) {
+        return Mono.just(ex.getMessage());
+    }
+
+    @ResponseBody
+    @ExceptionHandler(RecipeCreationException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    Mono<String> creationFailure(RecipeCreationException ex) {
         return Mono.just(ex.getMessage());
     }
 

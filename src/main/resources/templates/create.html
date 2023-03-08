@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
 
     <meta charset="utf-8">
@@ -13,7 +13,8 @@
     <title>Bartender.ai</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,8 +33,8 @@
     <div class="header clearfix">
         <nav>
             <ul class="nav nav-pills pull-right">
-                <li role="presentation" class="active"><a href="#">Create</a></li>
-                <li role="presentation"><a href="/favourites.html">Favourites</a></li>
+                <li role="presentation" class="active"><a href="/">Create</a></li>
+                <li role="presentation"><a href="#">Favourites</a></li>
             </ul>
         </nav>
         <h3 class="text-muted">Bartender.ai</h3>
@@ -44,13 +45,30 @@
         <p class="lead">Use machine learning (ML) to generate delicious cocktail recipes</p>
         <form action="/generate" method="GET">
             <div>
-                <input style="text-align:center;" name="prompt" id="prompt" class="form-control" placeholder="User Prompt"/>
+                <input style="text-align:center;" name="prompt" id="prompt" class="form-control"
+                       placeholder="User Prompt"/>
             </div>
             <div>
                 <br/>
                 <button class="btn btn-lg btn-success" role="button">Generate!</button>
             </div>
         </form>
+        <form action="/random" method="POST">
+            <button class="btn btn-lg btn-warning" role="button">Random</button>
+        </form>
+        <div th:unless="${recipe} == null" style="text-align:left">
+            <h3 th:text="${recipe.name}"/>
+            <tbody>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li th:each="i: ${recipe.ingredients}" th:text="${i}"/>
+            </ul>
+            <h4>Directions:</h4>
+            <ol>
+                <li th:each="d: ${recipe.directions}" th:text="${d}"/>
+            </ol>
+            </tbody>
+        </div>
     </div>
 
     <div class="row marketing">

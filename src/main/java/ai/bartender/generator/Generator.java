@@ -1,6 +1,6 @@
 package ai.bartender.generator;
 
-import ai.bartender.exceptions.InvalidPromptException;
+import ai.bartender.exceptions.RecipeCreationException;
 import ai.bartender.generator.ai.Ai;
 import ai.bartender.model.Recipe;
 import ai.bartender.persistence.RecipeRepository;
@@ -30,19 +30,25 @@ public class Generator {
             if (l.startsWith("- ")) {
                 ingredients.add(l.substring(2));
             } else if (l.length() > 0 && Character.isDigit(l.charAt(0))) {
-                directions.add(l);
+                directions.add(l.substring(2));
             }
         });
 
         // The AI might reject a given request for any reason. Throw a useful error to the client.
         if (ingredients.isEmpty() || directions.isEmpty()) {
-            throw new InvalidPromptException(request);
+            throw new RecipeCreationException(request);
         }
+
 
         final Recipe recipe = new Recipe(request, aiService.getName());
         recipe.addIngredients(ingredients);
         recipe.addDirections(directions);
-        repo.save(recipe);
+        try {
+            repo.save(recipe);
+        } catch (Throwable t) {
+            throw new RecipeCreationException(request, t);
+        }
+
         log.info("Created Recipe: \"{}\" [ingredients={}, directions={}]",
                 request, ingredients.size(), directions.size());
         return recipe;
