@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Mama's Kumquat",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "60ml vodka",
+      "30ml fresh kumquat juice",
+      "15ml honey syrup (made by mixing equal parts honey and hot water)",
+      "15ml fresh lemon juice",
+      "1 sprig of fresh rosemary",
+      "Ice",
+      "Soda water"
+    ],
+    "directions": [
+      "In a cocktail shaker, muddle the rosemary sprig to release its oils.",
+      "Add the vodka, kumquat juice, honey syrup, and lemon juice to the shaker.",
+      "Fill the shaker with ice and shake vigorously for 10-15 seconds.",
+      "Strain the mixture into a tall glass filled with ice.",
+      "Top with soda water and stir gently.",
+      "Garnish with a slice of kumquat and a sprig of rosemary."
+    ]
+  },
+  {
+    "name": "Santa's Salty Sack",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "60 ml vodka",
+      "30 ml cranberry juice",
+      "15 ml lime juice",
+      "15 ml simple syrup",
+      "1 pinch of sea salt",
+      "1 sprig of rosemary",
+      "Ice"
+    ],
+    "directions": [
+      "Fill a cocktail shaker with ice.",
+      "Add the vodka, cranberry juice, lime juice, simple syrup, and a pinch of sea salt to the shaker.",
+      "Shake the ingredients vigorously for about 10-15 seconds, until well combined and chilled.",
+      "Strain the mixture into a glass filled with ice.",
+      "Garnish the cocktail with a sprig of rosemary.",
+      "Serve and enjoy!"
+    ]
+  },
+  {
+    "name": "Curse These Metal Hands",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "60 ml bourbon",
+      "30 ml lemon juice",
+      "15 ml honey syrup (made by mixing equal parts honey and hot water)",
+      "1/4 teaspoon smoked paprika",
+      "1/4 teaspoon cinnamon",
+      "1 egg white"
+    ],
+    "directions": [
+      "In a cocktail shaker, add all ingredients except the egg white.",
+      "Add ice to the shaker and shake well for about 15 seconds.",
+      "Remove the ice and add the egg white to the shaker.",
+      "Shake again without ice for about 10 seconds to emulsify the egg white.",
+      "Add ice to the shaker and shake again for about 10 seconds.",
+      "Strain the mixture into a chilled glass and garnish with a sprinkle of smoked paprika."
+    ]
+  },
+  {
+    "name": "The Farmer's Wife",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "60 ml vodka",
+      "30 ml freshly squeezed lemon juice",
+      "15 ml honey syrup (1:1 honey and water)",
+      "30 ml carrot juice",
+      "1 sprig of fresh thyme",
+      "Ice",
+      "Carrot ribbons and thyme sprigs for garnish"
+    ],
+    "directions": [
+      "In a cocktail shaker, muddle the fresh thyme sprig.",
+      "Add the vodka, lemon juice, honey syrup, and carrot juice to the shaker.",
+      "Fill the shaker with ice and shake vigorously for about 10-15 seconds.",
+      "Strain the mixture into a chilled glass filled with ice.",
+      "Garnish with carrot ribbons and a sprig of thyme.",
+      "Enjoy your refreshing and delicious \"The Farmer's Wife\" cocktail!"
+    ]
+  },
+  {
+    "name": "Gingers Do Have Souls",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "60 ml ginger beer",
+      "30 ml vodka",
+      "30 ml fresh lime juice",
+      "15 ml honey syrup (1:1 honey and water)",
+      "2 dashes Angostura bitters",
+      "Ice",
+      "Candied ginger, for garnish"
+    ],
+    "directions": [
+      "Fill a shaker with ice.",
+      "Add the ginger beer, vodka, lime juice, honey syrup, and bitters to the shaker.",
+      "Shake vigorously for 10-15 seconds.",
+      "Strain the mixture into a glass filled with ice.",
+      "Garnish with a piece of candied ginger.",
+      "Enjoy your \"Gingers Do Have Souls\" cocktail!"
+    ]
+  },
+  {
+    "name": "Danny Dyer's Chocolate Homunculus",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "50 ml chocolate liqueur",
+      "30 ml hazelnut liqueur",
+      "20 ml vodka",
+      "10 ml raspberry syrup",
+      "1 dash of Angostura bitters",
+      "1 small scoop of vanilla ice cream",
+      "Chocolate shavings, for garnish"
+    ],
+    "directions": [
+      " Fill a shaker with ice.",
+      " Add the chocolate liqueur, hazelnut liqueur, vodka, raspberry syrup, and Angostura bitters to the shaker.",
+      " Shake well until the ingredients are mixed together.",
+      " Strain the mixture into a glass.",
+      " Add a small scoop of vanilla ice cream to the glass.",
+      " Garnish with chocolate shavings."
+    ]
+  },
+  {
+    "name": "Jamie Oliver",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "60 ml vodka",
+      "30 ml cranberry juice",
+      "15 ml lemon juice",
+      "15 ml simple syrup",
+      "1 tsp Worcestershire sauce",
+      "1 tsp liquid smoke",
+      "1 small sprig of rosemary",
+      "1 Turkey Twizzler, chopped into small pieces"
+    ],
+    "directions": [
+      "In a shaker, muddle the chopped Turkey Twizzler with the rosemary sprig.",
+      "Add the vodka, cranberry juice, lemon juice, simple syrup, Worcestershire sauce, and liquid smoke to the shaker.",
+      "Fill the shaker with ice and shake vigorously for 10-15 seconds.",
+      "Strain the cocktail into a glass filled with ice.",
+      "Garnish with a small piece of Turkey Twizzler and a sprig of rosemary."
+    ]
+  },
+  {
+    "name": "Midnight Snack",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "60 ml vodka",
+      "30 ml pomegranate juice",
+      "30 ml lemon juice",
+      "15 ml honey syrup",
+      "15 ml hot sauce",
+      "1 tsp garlic powder",
+      "1 tsp cumin powder",
+      "1 tsp paprika",
+      "1 small piece of grilled lamb (optional, for garnish)",
+      "1 small piece of pita bread (optional, for garnish)"
+    ],
+    "directions": [
+      "In a shaker, combine the vodka, pomegranate juice, lemon juice, honey syrup, hot sauce, garlic powder, cumin powder, and paprika.",
+      "Add ice to the shaker and shake vigorously for about 10 seconds.",
+      "Strain the cocktail into a glass filled with ice.",
+      "For the garnish, skewer a small piece of grilled lamb and a small piece of pita bread on a toothpick and place it on top of the cocktail.",
+      "Serve and enjoy your unique Donner Kebab cocktail!"
+    ]
+  },
+  {
+    "name": "Nacho Cheese",
+    "source": "gpt-3.5-turbo",
+    "ingredients": [
+      "60 ml tequila",
+      "30 ml lime juice",
+      "30 ml pineapple juice",
+      "15 ml triple sec",
+      "15 ml agave syrup",
+      "1 small jalapeño pepper, sliced",
+      "1 small piece of cheddar cheese",
+      "Crushed tortilla chips",
+      "Ice"
+    ],
+    "directions": [
+      " In a cocktail shaker, add tequila, lime juice, pineapple juice, triple sec, agave syrup, and jalapeño pepper slices.",
+      " Muddle the jalapeño slices in the cocktail shaker to release its flavor.",
+      " Add a small piece of cheddar cheese to the shaker and shake vigorously.",
+      " Strain the mixture into a glass filled with ice.",
+      " Crush some tortilla chips and sprinkle them over the top of the cocktail.",
+      " Garnish with a slice of jalapeño pepper and serve immediately."
+    ]
+  }
+]

@@ -15,14 +15,20 @@ import java.util.Arrays;
 public class RepositoryConfiguration {
 
     @Value("classpath:data/default.json")
-    private Resource initialData;
+    private Resource defaultData;
+
+    @Value("classpath:data/favourites.json")
+    private Resource favourites;
 
     @Bean
     CommandLineRunner preload(RecipeRepository repository) {
         return args -> {
             // Preload the database with a number of "known-good" cocktail recipes.
             final ObjectMapper mapper = new ObjectMapper();
-            try (JsonParser parser = mapper.createParser(initialData.getFile())) {
+            try (JsonParser parser = mapper.createParser(defaultData.getFile())) {
+                Arrays.stream(mapper.readValue(parser, Recipe[].class)).forEachOrdered(repository::save);
+            }
+            try (JsonParser parser = mapper.createParser(favourites.getFile())) {
                 Arrays.stream(mapper.readValue(parser, Recipe[].class)).forEachOrdered(repository::save);
             }
         };

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -32,16 +33,17 @@ public class ViewController {
         return "create";
     }
 
-    @PostMapping("/random")
+    @GetMapping("/random")
     String random(Model model) {
         final Random random = new Random();
-        final Recipe recipe = repo.findAll().get((int) random.nextLong(repo.count()));
-        model.addAttribute("recipe", recipe);
+        final List<Recipe> generated = repo.findBySource("gpt-3.5-turbo");
+        final Recipe selected = generated.get((int) random.nextLong(generated.size()));
+        model.addAttribute("recipe", selected);
         return "create";
     }
 
-    @GetMapping("/generate")
-    String generate(@RequestParam String prompt, Model model) {
+    @GetMapping("/result")
+    String result(@RequestParam String prompt, Model model) {
         // Reject invalid and/or banned prompts
         if (prompt == null || prompt.isBlank() || prompt.isEmpty()) {
             throw new EmptyPromptException();
@@ -69,11 +71,11 @@ public class ViewController {
         return Flux.fromIterable(repo.findAll());
     }
 
-    @GetMapping({"/recipes/{id}", "/recipes/{id}/"})
+    @GetMapping({"/recipes/{name}", "/recipes/{name}/"})
     @ResponseBody
-    Mono<Recipe> getById(@PathVariable Long id) {
-        final Optional<Recipe> foundRecipe = repo.findById(id);
-        return foundRecipe.map(Mono::just).orElseThrow(() -> new NotFoundException(id.toString()));
+    Mono<Recipe> getByName(@PathVariable String name) {
+        final Optional<Recipe> foundRecipe = repo.findByName(name);
+        return foundRecipe.map(Mono::just).orElseThrow(() -> new NotFoundException(name));
     }
 
 }

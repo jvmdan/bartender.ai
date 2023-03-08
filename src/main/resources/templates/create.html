@@ -34,7 +34,7 @@
         <nav>
             <ul class="nav nav-pills pull-right">
                 <li role="presentation" class="active"><a href="/">Create</a></li>
-                <li role="presentation"><a href="#">Favourites</a></li>
+                <li role="presentation"><a href="/random">Random</a></li>
             </ul>
         </nav>
         <h3 class="text-muted">Bartender.ai</h3>
@@ -43,7 +43,7 @@
     <div class="jumbotron">
         <h1>Create a cocktail</h1>
         <p class="lead">Use machine learning (ML) to generate delicious cocktail recipes</p>
-        <form action="/generate" method="GET">
+        <form action="/result" method="GET">
             <div>
                 <input style="text-align:center;" name="prompt" id="prompt" class="form-control"
                        placeholder="User Prompt"/>
@@ -53,10 +53,8 @@
                 <button class="btn btn-lg btn-success" role="button">Generate!</button>
             </div>
         </form>
-        <form action="/random" method="POST">
-            <button class="btn btn-lg btn-warning" role="button">Random</button>
-        </form>
         <div th:unless="${recipe} == null" style="text-align:left">
+            <p/>
             <h3 th:text="${recipe.name}"/>
             <tbody>
             <h4>Ingredients:</h4>
