@@ -1,0 +1,106 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bartender.ai</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="/">Create</a></li>
+                <li role="presentation"><a href="#">Favourites</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Bartender.ai</h3>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Oops!</h1>
+        <p class="lead"><span th:text="${error.message}"/>. Try again?</p>
+        <form action="/generate" method="GET">
+            <div>
+                <input style="text-align:center;" name="prompt" id="prompt" class="form-control"
+                       placeholder="User Prompt"/>
+            </div>
+            <div>
+                <br/>
+                <button class="btn btn-lg btn-success" role="button">Generate!</button>
+            </div>
+        </form>
+        <form action="/random" method="POST">
+            <button class="btn btn-lg btn-warning" role="button">Random</button>
+        </form>
+        <div th:unless="${recipe} == null" style="text-align:left">
+            <h3 th:text="${recipe.name}"/>
+            <tbody>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li th:each="i: ${recipe.ingredients}" th:text="${i}"/>
+            </ul>
+            <h4>Directions:</h4>
+            <ol>
+                <li th:each="d: ${recipe.directions}" th:text="${d}"/>
+            </ol>
+            </tbody>
+        </div>
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-6">
+            <h4>How It Works</h4>
+            <p>
+                This application will attempt to learn what makes a good cocktail from classic cocktail recipes, and
+                it shall generate new recipe ideas based upon our training data & a user prompt.
+            </p>
+            <p>
+                The prompt can be anything you like. Try experimenting with weird & wonderful phrases, such as
+                <b>Mama's Kumquat</b> or <b>Danny Dyer's Chocolate Homunculus</b>.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <h4>Technology Stack</h4>
+            <p>
+                This application is built upon <b>Java 17</b> & Jakarta EE using <b>Spring Framework</b> as
+                the Inversion of Control platform. The machine learning model is implemented using OpenAI's
+                <b>GPT 3.5</b> platform, with an underlying <b>H2</b> data store.
+            </p>
+            <p>
+                The RESTful API is implemented in <b>Spring WebFlux</b> and the accompanying front-end is written
+                in HTML using the <b>Bootstrap</b> toolkit.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Lovingly developed & curated by Daniel Scarfe</p>
+    </footer>
+
+</div>
+</body>
+</html>

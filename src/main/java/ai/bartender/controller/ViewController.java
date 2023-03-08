@@ -1,6 +1,7 @@
 package ai.bartender.controller;
 
 import ai.bartender.exceptions.BannedPromptException;
+import ai.bartender.exceptions.EmptyPromptException;
 import ai.bartender.exceptions.NotFoundException;
 import ai.bartender.generator.Generator;
 import ai.bartender.model.Recipe;
@@ -41,10 +42,11 @@ public class ViewController {
 
     @GetMapping("/generate")
     String generate(@RequestParam String prompt, Model model) {
+        // Reject invalid and/or banned prompts
         if (prompt == null || prompt.isBlank() || prompt.isEmpty()) {
-            return "create";
+            throw new EmptyPromptException();
         } else if (PromptUtils.isBanned(prompt)) {
-            throw new BannedPromptException(prompt); // Reject invalid and/or banned prompts
+            throw new BannedPromptException(prompt);
         }
         final String request = PromptUtils.normalise(prompt);
         final Optional<Recipe> existing = repo.findByName(request);
