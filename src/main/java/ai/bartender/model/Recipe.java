@@ -1,6 +1,9 @@
 package ai.bartender.model;
 
 import ai.bartender.utils.PromptUtils;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -15,10 +18,12 @@ import java.util.List;
  * @author Daniel Scarfe
  */
 @NoArgsConstructor
+@Entity
 @Data
 public class Recipe {
 
-    private String id;
+    @GeneratedValue @Id
+    private Long id;
     private String name;
     private String source;
     private List<String> ingredients;
@@ -27,7 +32,6 @@ public class Recipe {
 
     public Recipe(String name, String source) {
         this.name = PromptUtils.normalise(name);
-        this.id = PromptUtils.uuid(name);
         this.source = source;
         this.ingredients = new ArrayList<>();
         this.directions = new ArrayList<>();

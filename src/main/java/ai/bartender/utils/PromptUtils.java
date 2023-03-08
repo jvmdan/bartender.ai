@@ -46,19 +46,6 @@ public final class PromptUtils {
     }
 
     /**
-     * Generate a unique identifier from a given String. Identical strings will result in the same UUID.
-     *
-     * @param from the String from which we wish to generate a UUID value.
-     * @return a unique identifier for the given String.
-     */
-    public static String uuid(String from) {
-        // Using a "pretty" name rather than a UUID allows us to easily request a recipe from the RESTful API
-        return from.replace(" ", "-")
-                .replace("&", "and")
-                .toLowerCase(Locale.ROOT);
-    }
-
-    /**
      * Compare our prompt against the list of banned words, ensuring our prompt does not contain a match.
      *
      * @param prompt the prompt we wish to validate against the banned word list.

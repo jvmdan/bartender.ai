@@ -25,7 +25,6 @@ Spring has been chosen as the dependency injection (DI) framework. Some might co
 * Deploy to cloud infrastructure for test & development.
 * Devise a suitable set of training data for the ML model.
 * Convert H2 database to Redis (or other data store).
-* Convert Spring MVC to WebFlux for efficiency reasons.
 * Experiment with generating recipes using JDL.
 * Add ability for users to rate created recipes.
 

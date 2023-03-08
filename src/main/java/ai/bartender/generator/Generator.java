@@ -1,12 +1,13 @@
 package ai.bartender.generator;
 
+import ai.bartender.exceptions.InvalidPromptException;
 import ai.bartender.generator.ai.Ai;
+import ai.bartender.model.Recipe;
+import ai.bartender.persistence.RecipeRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-import ai.bartender.model.Recipe;
-import ai.bartender.persistence.DataStore;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ import java.util.List;
 public class Generator {
 
     private final Ai aiService;
-    private final DataStore<Recipe, String> dataStore;
+    private final RecipeRepository repo;
 
     public Recipe create(String request) {
         final String result = aiService.request("Create a recipe for a cocktail named \"" + request + "\"");
@@ -33,10 +34,17 @@ public class Generator {
             }
         });
 
+        // The AI might reject a given request for any reason. Throw a useful error to the client.
+        if (ingredients.isEmpty() || directions.isEmpty()) {
+            throw new InvalidPromptException(request);
+        }
+
         final Recipe recipe = new Recipe(request, aiService.getName());
         recipe.addIngredients(ingredients);
         recipe.addDirections(directions);
-        log.info("New Recipe: \"{}\" [ingredients={}, directions={}]", request, ingredients.size(), directions.size());
+        repo.save(recipe);
+        log.info("Created Recipe: \"{}\" [ingredients={}, directions={}]",
+                request, ingredients.size(), directions.size());
         return recipe;
     }
 
