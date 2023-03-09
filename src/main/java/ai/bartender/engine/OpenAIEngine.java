@@ -4,7 +4,6 @@ import ai.bartender.exceptions.RecipeCreationException;
 import ai.bartender.model.Prompt;
 import ai.bartender.model.Recipe;
 import ai.bartender.model.Response;
-import ai.bartender.persistence.RecipeRepository;
 import com.theokanning.openai.completion.chat.ChatCompletionChoice;
 import com.theokanning.openai.completion.chat.ChatCompletionRequest;
 import com.theokanning.openai.completion.chat.ChatMessage;
@@ -33,8 +32,12 @@ import java.util.function.Predicate;
 @Profile("openai")
 @PropertySource(value = "classpath:openai.properties")
 @Slf4j
-public class OpenAIEngine implements Engine, InitializingBean {
+public class OpenAIEngine implements Engine<Recipe>, InitializingBean {
 
+    /**
+     * The underlying API only supports a subset of OpenAI models. As such, we do a simple check upon
+     * bean construction to ensure that the configured model is supported at the API level.
+     */
     private static final List<String> SUPPORTED_MODELS = List.of("gpt-3.5-turbo", "gpt-3.5-turbo-0301");
 
     private OpenAiService service;
@@ -65,10 +68,10 @@ public class OpenAIEngine implements Engine, InitializingBean {
     }
 
     @Override
-    public Response request(Prompt p) {
+    public Response<Recipe> respond(Prompt prompt) {
         // Convert the user prompt into a natural language request for OpenAI to process.
-        final String name = p.recipeName();
-        final String contains = p.mustContain();
+        final String name = prompt.recipeName();
+        final String contains = prompt.mustContain();
         final StringBuilder requestBuilder = new StringBuilder();
         requestBuilder.append("Create a recipe for a cocktail named \"").append(name).append("\".");
         if (contains != null && !contains.isBlank()) {
@@ -101,9 +104,16 @@ public class OpenAIEngine implements Engine, InitializingBean {
 
         // Return the Response object containing our Recipe instance to the caller.
         log.info("Created Recipe: \"{}\" [ingredients={}, directions={}]", recipe.getName(), i.size(), d.size());
-        return new Response(recipe);
+        return new Response<>(recipe);
     }
 
+    /**
+     * A package-private static helper method for extracting relevant parts of an OpenAI response.
+     *
+     * @param response  the response we have received from OpenAI.
+     * @param predicate the predicate we wish to use to assert a match.
+     * @return a list of Strings representing any & all lines that meet our predicate.
+     */
     static List<String> extract(ChatMessage response, Predicate<String> predicate) {
         final List<String> results = new ArrayList<>();
         response.getContent().lines().filter(predicate)

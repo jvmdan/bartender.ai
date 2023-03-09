@@ -28,7 +28,7 @@ import java.util.Random;
 public class ViewController {
 
     private final RecipeRepository repo;
-    private final Engine engine;
+    private final Engine<Recipe> engine;
 
     @Value("${bartender.regenerate:false}")
     public boolean regenerate;
@@ -67,7 +67,7 @@ public class ViewController {
         } else {
             existing.ifPresent((r) -> repo.delete(existing.get()));
             final Prompt p = new Prompt(name, contains);
-            final Response r = engine.request(p);
+            final Response<Recipe> r = engine.respond(p);
             model.addAttribute("recipe", r.result());
         }
         return "view";
