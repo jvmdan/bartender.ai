@@ -296,7 +296,7 @@
       "60ml vodka",
       "30ml tomato juice",
       "15ml pickle juice",
-      "15ml mustard syrup*",
+      "15ml mustard syrup",
       "1 small piece of cooked ground beef",
       "1 slice of American cheese",
       "1 small piece of lettuce",
@@ -394,6 +394,112 @@
       "Add a handful of ice cubes to the shaker and shake vigorously for about 10 seconds.",
       "Strain the mixture into a chilled glass.",
       "Garnish with maple flakes on top."
+    ]
+  },
+  {
+    "name": "Turkish Delight",
+    "permalink": "turkish-delight",
+    "category": "generated",
+    "ingredients": [
+      "60ml of Raki (Turkish anise-flavored liquor)",
+      "30ml of pomegranate juice",
+      "15ml of rose water",
+      "10ml of honey",
+      "1 egg white",
+      "Ice cubes",
+      "Dried rose petals (garnish)"
+    ],
+    "directions": [
+      "In a cocktail shaker, add the Raki, pomegranate juice, rose water, honey, and egg white.",
+      "Add a few ice cubes to the shaker and shake vigorously for about 15 seconds.",
+      "Pour the mixture through a strainer into a chilled coupe glass.",
+      "Garnish with a sprinkle of dried rose petals.",
+      "Serve and enjoy your Turkish Delight cocktail!"
+    ]
+  },
+  {
+    "name": "Kit Kat Martini",
+    "permalink": "kit-kat-martini",
+    "category": "generated",
+    "ingredients": [
+      "50ml vodka",
+      "25ml crème de cacao",
+      "25ml hazelnut liqueur",
+      "1 Kit Kat chocolate bar (broken into small pieces)",
+      "Ice",
+      "Whipped cream (optional)"
+    ],
+    "directions": [
+      "In a cocktail shaker, add the vodka, crème de cacao, hazelnut liqueur, and Kit Kat pieces.",
+      "Fill the shaker with ice and shake vigorously.",
+      "Strain the mixture into a chilled martini glass.",
+      "Top with whipped cream (optional) and garnish with a small piece of Kit Kat chocolate."
+    ]
+  },
+  {
+    "name": "Mushroom Soup",
+    "permalink": "mushroom-soup",
+    "category": "generated",
+    "ingredients": [
+      "60 ml mushroom-infused gin",
+      "30 ml dry vermouth",
+      "15 ml lemon juice",
+      "15 ml honey syrup (equal parts honey and water)",
+      "1 dash of absinthe",
+      "1 sprig of fresh thyme",
+      "1 egg white"
+    ],
+    "directions": [
+      "To make the mushroom-infused gin, add a handful of dried shiitake mushrooms to a bottle of gin and let it infuse for at least 24 hours.",
+      "In a shaker, combine the mushroom-infused gin, dry vermouth, lemon juice, honey syrup, absinthe, and egg white.",
+      "Add ice to the shaker and shake vigorously for at least 30 seconds.",
+      "Strain the mixture into a chilled coupe glass.",
+      "Garnish with a sprig of fresh thyme."
+    ]
+  },
+  {
+    "name": "Viva La France",
+    "permalink": "viva-la-france",
+    "category": "generated",
+    "ingredients": [
+      "60 ml of cognac",
+      "30 ml of crème de cassis",
+      "15 ml of lemon juice",
+      "10 ml of lavender syrup",
+      "1 sprig of fresh thyme",
+      "Ice cubes",
+      "Sparkling wine"
+    ],
+    "directions": [
+      "In a shaker, add the cognac, crème de cassis, lemon juice, and lavender syrup.",
+      "Add ice cubes to the shaker and shake vigorously for about 15 seconds.",
+      "Strain the mixture into a champagne flute.",
+      "Top up the glass with sparkling wine.",
+      "Garnish with a sprig of fresh thyme."
+    ]
+  },
+  {
+    "name": "A Bloody Mess",
+    "permalink": "a-bloody-mess",
+    "category": "generated",
+    "ingredients": [
+      "60ml tomato juice",
+      "30ml vodka",
+      "15ml hot sauce",
+      "10ml Worcestershire sauce",
+      "5ml soy sauce",
+      "5ml lemon juice",
+      "1/4 tsp horseradish",
+      "Pinch of salt and pepper",
+      "1 tsp beetroot powder",
+      "1 tsp smoked paprika"
+    ],
+    "directions": [
+      "In a shaker filled with ice, combine tomato juice, vodka, hot sauce, Worcestershire sauce, soy sauce, lemon juice, horseradish, salt, and pepper.",
+      "Shake well for about 10 seconds.",
+      "Rim a glass with a mixture of beetroot powder and smoked paprika.",
+      "Strain the cocktail into the glass.",
+      "Garnish with a celery stick or a slice of bacon."
     ]
   }
 ]

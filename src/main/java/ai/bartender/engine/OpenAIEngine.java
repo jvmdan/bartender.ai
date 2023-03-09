@@ -7,6 +7,8 @@ import ai.bartender.model.Response;
 import com.theokanning.openai.completion.chat.ChatCompletionChoice;
 import com.theokanning.openai.completion.chat.ChatCompletionRequest;
 import com.theokanning.openai.completion.chat.ChatMessage;
+import com.theokanning.openai.moderation.Moderation;
+import com.theokanning.openai.moderation.ModerationRequest;
 import com.theokanning.openai.service.OpenAiService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
@@ -68,20 +70,24 @@ public class OpenAIEngine implements Engine<Recipe>, InitializingBean {
     }
 
     @Override
+    public boolean moderate(Prompt prompt) {
+        final ModerationRequest request = ModerationRequest.builder()
+                .model("text-moderation-latest")
+                .input("Create a recipe for a cocktail named \"" + prompt.recipeName() + "\"")
+                .build();
+        final List<Moderation> results = service.createModeration(request).getResults();
+        return results.stream().anyMatch(Moderation::isFlagged);
+    }
+
+    @Override
     public Response<Recipe> respond(Prompt prompt) {
         // Convert the user prompt into a natural language request for OpenAI to process.
         final String name = prompt.recipeName();
-        final String contains = prompt.mustContain();
-        final StringBuilder requestBuilder = new StringBuilder();
-        requestBuilder.append("Create a recipe for a cocktail named \"").append(name).append("\".");
-        if (contains != null && !contains.isBlank()) {
-            requestBuilder.append("The recipe must contain the following ingredients: ").append(contains);
-        }
 
         // Construct the user request, providing the pretext to the system to help scope the AI.
         final List<ChatMessage> context = new ArrayList<>(2);
         context.add(new ChatMessage("system", pretext));
-        context.add(new ChatMessage("user", requestBuilder.toString()));
+        context.add(new ChatMessage("user", "Create a recipe for a cocktail named \"" + name + "\"."));
         final ChatCompletionRequest request = ChatCompletionRequest.builder()
                 .messages(context).model(model).n(1).temperature(0.5).build();
 
@@ -96,7 +102,7 @@ public class OpenAIEngine implements Engine<Recipe>, InitializingBean {
 
         // The AI might reject a given request for any reason. Throw a useful error to the client.
         if (i.isEmpty() || d.isEmpty()) {
-            throw new RecipeCreationException(name);
+            throw new RecipeCreationException(prompt);
         } else {
             recipe.addIngredients(i);
             recipe.addDirections(d);
@@ -119,6 +125,11 @@ public class OpenAIEngine implements Engine<Recipe>, InitializingBean {
         response.getContent().lines().filter(predicate)
                 .forEachOrdered(l -> results.add(l.substring(l.indexOf(" ") + 1)));
         return results;
+    }
+
+    @Override
+    public Response<Recipe> refine(Response<Recipe> result, Prompt prompt) {
+        throw new UnsupportedOperationException(); // TODO!
     }
 
 }

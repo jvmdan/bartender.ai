@@ -1,8 +1,9 @@
-package ai.bartender.persistence;
+package ai.bartender.repository;
 
 import ai.bartender.model.Recipe;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +13,8 @@ import org.springframework.core.io.Resource;
 import java.util.Arrays;
 
 @Configuration
-public class TrainingData {
+@Slf4j
+public class InitialConfiguration {
 
     @Value("classpath:data/classic.json")
     private Resource classic;
@@ -33,6 +35,7 @@ public class TrainingData {
             try (JsonParser parser = mapper.createParser(generated.getFile())) {
                 Arrays.stream(mapper.readValue(parser, Recipe[].class)).forEachOrdered(repository::save);
             }
+            log.info("Initialised \"Bartender.ai\" with {} existing recipes", repository.count());
         };
     }
 

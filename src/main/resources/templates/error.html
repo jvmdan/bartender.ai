@@ -41,12 +41,12 @@
     </div>
 
     <div class="jumbotron">
-        <h1>Oops!</h1>
-        <p class="lead"><span th:text="${error.message}"/>. Try again?</p>
+        <h1>Create a cocktail</h1>
+        <p class="lead text-danger"><span th:text="${error.message}"/>. Try again?</p>
         <form action="/result" method="GET">
             <div>
                 <input style="text-align:center;" name="prompt" id="prompt" class="form-control"
-                       placeholder="User Prompt"/>
+                       placeholder="Cocktail Name"/>
             </div>
             <div>
                 <br/>

@@ -1,4 +1,4 @@
-package ai.bartender.persistence;
+package ai.bartender.repository;
 
 import ai.bartender.model.Recipe;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @Repository
 public interface RecipeRepository extends JpaRepository<Recipe, Long> {
-
+    
     Optional<Recipe> findByName(String name);
 
     List<Recipe> findByCategory(String category);

@@ -46,11 +46,11 @@
         <form action="/result" method="GET">
             <div th:unless="${recipe} == null">
                 <input style="text-align:center;" name="prompt" id="emptyPrompt" class="form-control"
-                       placeholder="User Prompt" th:value="${recipe.name}"/>
+                       placeholder="Cocktail Name" th:value="${recipe.name}"/>
             </div>
             <div th:if="${recipe} == null">
                 <input style="text-align:center;" name="prompt" id="prompt" class="form-control"
-                       placeholder="User Prompt"/>
+                       placeholder="Cocktail Name"/>
             </div>
             <div>
                 <br/>

@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.server.ResponseStatusException;
 
 /**
  * The ViewAdvice is a ControllerAdvice implementation that catches exceptions when thrown and
@@ -30,5 +31,13 @@ class ViewAdvice {
         model.addAttribute("error", ex);
         return "error";
     }
+
+    @ExceptionHandler(ResponseStatusException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    String responseException(ResponseStatusException ex, Model model) {
+        model.addAttribute("error", ex);
+        return "error";
+    }
+
 
 }
