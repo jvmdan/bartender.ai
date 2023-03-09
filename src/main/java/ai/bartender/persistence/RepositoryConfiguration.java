@@ -14,21 +14,23 @@ import java.util.Arrays;
 @Configuration
 public class RepositoryConfiguration {
 
-    @Value("classpath:data/default.json")
-    private Resource defaultData;
+    @Value("classpath:data/classic.json")
+    private Resource classic;
 
-    @Value("classpath:data/favourites.json")
-    private Resource favourites;
+    @Value("classpath:data/generated.json")
+    private Resource generated;
 
     @Bean
     CommandLineRunner preload(RecipeRepository repository) {
         return args -> {
-            // Preload the database with a number of "known-good" cocktail recipes.
+            // Preload the database with a number of "known-good" classic cocktail recipes.
             final ObjectMapper mapper = new ObjectMapper();
-            try (JsonParser parser = mapper.createParser(defaultData.getFile())) {
+            try (JsonParser parser = mapper.createParser(classic.getFile())) {
                 Arrays.stream(mapper.readValue(parser, Recipe[].class)).forEachOrdered(repository::save);
             }
-            try (JsonParser parser = mapper.createParser(favourites.getFile())) {
+
+            // Preload a number of "known-good" generated recipes, to further strengthen the model.
+            try (JsonParser parser = mapper.createParser(generated.getFile())) {
                 Arrays.stream(mapper.readValue(parser, Recipe[].class)).forEachOrdered(repository::save);
             }
         };

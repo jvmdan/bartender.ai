@@ -26,14 +26,15 @@ public class Recipe implements Serializable {
     @Column(name = "id")
     private Long id;
     private String name;
-    private String source;
+    private String permalink;
+    private String category;
     private List<String> ingredients;
     private List<String> directions;
 
 
-    public Recipe(String name, String source) {
+    public Recipe(String name, String category) {
         this.name = PromptUtils.normalise(name);
-        this.source = source;
+        this.category = category;
         this.ingredients = new ArrayList<>();
         this.directions = new ArrayList<>();
     }

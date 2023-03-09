@@ -36,7 +36,7 @@ public class ViewController {
     @GetMapping("/random")
     String random(Model model) {
         final Random random = new Random();
-        final List<Recipe> generated = repo.findBySource("gpt-3.5-turbo");
+        final List<Recipe> generated = repo.findByCategory("generated");
         final Recipe selected = generated.get((int) random.nextLong(generated.size()));
         model.addAttribute("recipe", selected);
         return "create";
@@ -71,11 +71,10 @@ public class ViewController {
         return Flux.fromIterable(repo.findAll());
     }
 
-    @GetMapping({"/recipes/{name}", "/recipes/{name}/"})
+    @GetMapping({"/recipes/{category}", "/recipes/{category}/"})
     @ResponseBody
-    Mono<Recipe> getByName(@PathVariable String name) {
-        final Optional<Recipe> foundRecipe = repo.findByName(name);
-        return foundRecipe.map(Mono::just).orElseThrow(() -> new NotFoundException(name));
+    Flux<Recipe> getCategory(@PathVariable String category) {
+        return Flux.fromIterable(repo.findByCategory(category));
     }
 
 }

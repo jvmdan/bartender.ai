@@ -1,7 +1,7 @@
 [
   {
     "name": "Mojito",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml white rum",
       "30ml fresh lime juice",
@@ -21,7 +21,7 @@
   },
   {
     "name": "White Russian",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "50ml vodka",
       "25ml coffee liqueur",
@@ -38,7 +38,7 @@
   },
   {
     "name": "Old Fashioned",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml bourbon whiskey",
       "1 tsp sugar",
@@ -58,7 +58,7 @@
   },
   {
     "name": "Sex On The Beach",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "50ml vodka",
       "25ml peach schnapps",
@@ -77,7 +77,7 @@
   },
   {
     "name": "Espresso Martini",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "50ml vodka",
       "30ml freshly brewed espresso",
@@ -97,7 +97,7 @@
   },
   {
     "name": "New York Sour",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml whiskey",
       "30 ml lemon juice",
@@ -115,7 +115,7 @@
   },
   {
     "name": "Aperol Spritz",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml Aperol",
       "90 ml Prosecco",
@@ -132,7 +132,7 @@
   },
   {
     "name": "Martini",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml gin",
       "15ml dry vermouth",
@@ -149,7 +149,7 @@
   },
   {
     "name": "Whiskey Sour",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml whiskey",
       "30 ml fresh lemon juice",
@@ -167,7 +167,7 @@
   },
   {
     "name": "Tequila Sunrise",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml tequila",
       "120 ml orange juice",
@@ -186,7 +186,7 @@
   },
   {
     "name": "Manhattan",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml whiskey",
       "30 ml sweet vermouth",
@@ -205,7 +205,7 @@
   },
   {
     "name": "Mimosa",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "90 ml champagne",
       "60 ml freshly squeezed orange juice",
@@ -224,7 +224,7 @@
   },
   {
     "name": "Black Russian",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml vodka",
       "30ml coffee liqueur"
@@ -239,7 +239,7 @@
   },
   {
     "name": "Snowball",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "50 ml vodka",
       "25 ml lime juice",
@@ -259,7 +259,7 @@
   },
   {
     "name": "Cosmopolitan",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "45 ml vodka",
       "22.5 ml triple sec",
@@ -279,7 +279,7 @@
   },
   {
     "name": "Negroni",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "30 ml gin",
       "30 ml sweet vermouth",
@@ -296,7 +296,7 @@
   },
   {
     "name": "Tom Collins",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml gin",
       "30 ml fresh lemon juice",
@@ -315,7 +315,7 @@
   },
   {
     "name": "Cuba Libre",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml white rum",
       "120 ml cola",
@@ -332,7 +332,7 @@
   },
   {
     "name": "Daiquiri",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml white rum",
       "30ml freshly squeezed lime juice",
@@ -350,7 +350,7 @@
   },
   {
     "name": "Screwdriver",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml vodka",
       "120 ml orange juice",
@@ -366,7 +366,7 @@
   },
   {
     "name": "Sazerac",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml rye whiskey",
       "10 ml absinthe",
@@ -385,7 +385,7 @@
   },
   {
     "name": "Paloma",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml tequila",
       "30 ml fresh lime juice",
@@ -404,7 +404,7 @@
   },
   {
     "name": "Moscow Mule",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml vodka",
       "120 ml ginger beer",
@@ -422,7 +422,7 @@
   },
   {
     "name": "Sidecar",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "45ml cognac",
       "22.5ml triple sec",
@@ -440,7 +440,7 @@
   },
   {
     "name": "Martinez",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml gin",
       "30ml sweet vermouth",
@@ -458,7 +458,7 @@
   },
   {
     "name": "Pisco Sour",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml Pisco",
       "30 ml fresh lime juice",
@@ -479,7 +479,7 @@
   },
   {
     "name": "French 75",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "45 ml gin",
       "22.5 ml fresh lemon juice",
@@ -498,7 +498,7 @@
   },
   {
     "name": "Mint Julep",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml bourbon",
       "15ml simple syrup",
@@ -514,7 +514,7 @@
   },
   {
     "name": "Last Word",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "30 ml gin",
       "30 ml green Chartreuse",
@@ -534,7 +534,7 @@
   },
   {
     "name": "Irish Coffee",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "50ml Irish whiskey",
       "100ml hot coffee",
@@ -552,7 +552,7 @@
   },
   {
     "name": "Gin Fizz",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml gin",
       "30 ml fresh lemon juice",
@@ -572,7 +572,7 @@
   },
   {
     "name": "Bloody Mary",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml vodka",
       "120 ml tomato juice",
@@ -595,7 +595,7 @@
   },
   {
     "name": "Gimlet",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml gin",
       "30ml fresh lime juice",
@@ -613,7 +613,7 @@
   },
   {
     "name": "Margarita",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml tequila",
       "30 ml lime juice",
@@ -633,7 +633,7 @@
   },
   {
     "name": "Boulevardier",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "30 ml bourbon whiskey",
       "30 ml sweet vermouth",
@@ -650,7 +650,7 @@
   },
   {
     "name": "Dark & Stormy",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml dark rum",
       "30 ml blackberry liqueur",
@@ -670,7 +670,7 @@
   },
   {
     "name": "Long Island Iced Tea",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "30ml vodka",
       "30ml gin",
@@ -695,7 +695,7 @@
   },
   {
     "name": "Kir Royale",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "30 ml crème de cassis",
       "120 ml champagne",
@@ -711,7 +711,7 @@
   },
   {
     "name": "Mai Tai",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml dark rum",
       "30ml fresh lime juice",
@@ -730,7 +730,7 @@
   },
   {
     "name": "Bellini",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "100ml Prosecco",
       "50ml peach puree",
@@ -748,7 +748,7 @@
   },
   {
     "name": "Pina Colada",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml white rum",
       "120ml pineapple juice",
@@ -767,7 +767,7 @@
   },
   {
     "name": "Greyhound",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60ml grapefruit juice",
       "60ml vodka",
@@ -784,7 +784,7 @@
   },
   {
     "name": "Strawberry Mojito",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml white rum",
       "30 ml fresh lime juice",
@@ -806,7 +806,7 @@
   },
   {
     "name": "Passionfruit Mojito",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml white rum",
       "30 ml fresh lime juice",
@@ -827,7 +827,7 @@
   },
   {
     "name": "Hazelnut Espresso Martini",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "45ml vodka",
       "30ml espresso",
@@ -847,7 +847,7 @@
   },
   {
     "name": "Cherry Sour",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml of gin",
       "30 ml of fresh lemon juice",
@@ -867,7 +867,7 @@
   },
   {
     "name": "Amaretto Cherry Sour",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "50 ml amaretto liqueur",
       "30 ml fresh lemon juice",
@@ -886,7 +886,7 @@
   },
   {
     "name": "Bramble",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml gin",
       "30 ml fresh lemon juice",
@@ -905,7 +905,7 @@
   },
   {
     "name": "Spicy Paloma",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml tequila",
       "30 ml fresh lime juice",
@@ -926,7 +926,7 @@
   },
   {
     "name": "Cranberry Whiskey Sour",
-    "source": "default",
+    "category": "classic",
     "ingredients": [
       "60 ml whiskey",
       "30 ml cranberry juice",

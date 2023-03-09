@@ -1,7 +1,7 @@
 [
   {
     "name": "Mama's Kumquat",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "60ml vodka",
       "30ml fresh kumquat juice",
@@ -22,7 +22,7 @@
   },
   {
     "name": "Santa's Salty Sack",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "60 ml vodka",
       "30 ml cranberry juice",
@@ -43,7 +43,7 @@
   },
   {
     "name": "Curse These Metal Hands",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "60 ml bourbon",
       "30 ml lemon juice",
@@ -63,7 +63,7 @@
   },
   {
     "name": "The Farmer's Wife",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "60 ml vodka",
       "30 ml freshly squeezed lemon juice",
@@ -84,7 +84,7 @@
   },
   {
     "name": "Gingers Do Have Souls",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "60 ml ginger beer",
       "30 ml vodka",
@@ -105,7 +105,7 @@
   },
   {
     "name": "Danny Dyer's Chocolate Homunculus",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "50 ml chocolate liqueur",
       "30 ml hazelnut liqueur",
@@ -126,7 +126,7 @@
   },
   {
     "name": "Jamie Oliver",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "60 ml vodka",
       "30 ml cranberry juice",
@@ -147,7 +147,7 @@
   },
   {
     "name": "Midnight Snack",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "60 ml vodka",
       "30 ml pomegranate juice",
@@ -170,7 +170,7 @@
   },
   {
     "name": "Nacho Cheese",
-    "source": "gpt-3.5-turbo",
+    "category": "generated",
     "ingredients": [
       "60 ml tequila",
       "30 ml lime juice",
