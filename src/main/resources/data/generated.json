@@ -1,6 +1,8 @@
 [
   {
+    "id": 51,
     "name": "Mama's Kumquat",
+    "permalink": "mamas-kumquat",
     "category": "generated",
     "ingredients": [
       "60ml vodka",
@@ -21,7 +23,9 @@
     ]
   },
   {
+    "id": 52,
     "name": "Santa's Salty Sack",
+    "permalink": "santas-salty-sack",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -42,7 +46,9 @@
     ]
   },
   {
+    "id": 53,
     "name": "Curse These Metal Hands",
+    "permalink": "curse-these-metal-hands",
     "category": "generated",
     "ingredients": [
       "60 ml bourbon",
@@ -62,7 +68,9 @@
     ]
   },
   {
+    "id": 54,
     "name": "The Farmer's Wife",
+    "permalink": "the-farmers-wife",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -83,7 +91,9 @@
     ]
   },
   {
+    "id": 55,
     "name": "Gingers Do Have Souls",
+    "permalink": "gingers-do-have-souls",
     "category": "generated",
     "ingredients": [
       "60 ml ginger beer",
@@ -104,7 +114,9 @@
     ]
   },
   {
+    "id": 56,
     "name": "Danny Dyer's Chocolate Homunculus",
+    "permalink": "danny-dyers-chocolate-homunculus",
     "category": "generated",
     "ingredients": [
       "50 ml chocolate liqueur",
@@ -125,7 +137,9 @@
     ]
   },
   {
+    "id": 57,
     "name": "Jamie Oliver",
+    "permalink": "jamie-oliver",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -146,7 +160,9 @@
     ]
   },
   {
+    "id": 58,
     "name": "Midnight Snack",
+    "permalink": "midnight-snack",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -169,7 +185,9 @@
     ]
   },
   {
+    "id": 59,
     "name": "Nacho Cheese",
+    "permalink": "nacho-cheese",
     "category": "generated",
     "ingredients": [
       "60 ml tequila",
@@ -183,12 +201,12 @@
       "Ice"
     ],
     "directions": [
-      " In a cocktail shaker, add tequila, lime juice, pineapple juice, triple sec, agave syrup, and jalapeño pepper slices.",
-      " Muddle the jalapeño slices in the cocktail shaker to release its flavor.",
-      " Add a small piece of cheddar cheese to the shaker and shake vigorously.",
-      " Strain the mixture into a glass filled with ice.",
-      " Crush some tortilla chips and sprinkle them over the top of the cocktail.",
-      " Garnish with a slice of jalapeño pepper and serve immediately."
+      "In a cocktail shaker, add tequila, lime juice, pineapple juice, triple sec, agave syrup, and jalapeño pepper slices.",
+      "Muddle the jalapeño slices in the cocktail shaker to release its flavor.",
+      "Add a small piece of cheddar cheese to the shaker and shake vigorously.",
+      "Strain the mixture into a glass filled with ice.",
+      "Crush some tortilla chips and sprinkle them over the top of the cocktail.",
+      "Garnish with a slice of jalapeño pepper and serve immediately."
     ]
   }
 ]

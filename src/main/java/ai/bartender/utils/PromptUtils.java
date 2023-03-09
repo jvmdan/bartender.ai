@@ -56,4 +56,12 @@ public final class PromptUtils {
         return BANNED.stream().anyMatch(normalised::contains);
     }
 
+    public static String permalink(String prompt) {
+        final String normalised = normalise(prompt);
+        final String alphanumeric = normalised.replace(" ", "-")
+                .replace("&", "and")
+                .replace("'", "");
+        return alphanumeric.toLowerCase(Locale.ROOT);
+    }
+
 }

@@ -3,6 +3,7 @@ package ai.bartender.controller;
 import ai.bartender.exceptions.BannedPromptException;
 import ai.bartender.exceptions.EmptyPromptException;
 import ai.bartender.exceptions.NotFoundException;
+import ai.bartender.exceptions.NotPermittedException;
 import ai.bartender.generator.Generator;
 import ai.bartender.model.Recipe;
 import ai.bartender.persistence.RecipeRepository;
@@ -13,6 +14,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.MethodNotAllowedException;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -67,14 +69,22 @@ public class ViewController {
 
     @GetMapping({"/recipes", "/recipes/"})
     @ResponseBody
-    Flux<Recipe> all() {
-        return Flux.fromIterable(repo.findAll());
+    Mono<Void> all() {
+        throw new NotPermittedException("/recipes");
     }
 
     @GetMapping({"/recipes/{category}", "/recipes/{category}/"})
     @ResponseBody
     Flux<Recipe> getCategory(@PathVariable String category) {
         return Flux.fromIterable(repo.findByCategory(category));
+    }
+
+    @GetMapping({"/recipes/{category}/{permalink}", "/recipes/{category}/{permalink}/"})
+    @ResponseBody
+    Mono<Recipe> getByPermalink(@PathVariable String category, @PathVariable String permalink) {
+        final List<Recipe> recipes = repo.findByCategory(category);
+        final Optional<Recipe> match = recipes.stream().filter(r -> r.getPermalink().equals(permalink)).findAny();
+        return Mono.justOrEmpty(match);
     }
 
 }

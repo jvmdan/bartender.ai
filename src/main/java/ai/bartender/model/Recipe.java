@@ -1,6 +1,7 @@
 package ai.bartender.model;
 
 import ai.bartender.utils.PromptUtils;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
