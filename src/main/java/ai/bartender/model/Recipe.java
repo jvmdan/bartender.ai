@@ -35,6 +35,7 @@ public class Recipe implements Serializable {
 
     public Recipe(String name, String category) {
         this.name = PromptUtils.normalise(name);
+        this.permalink = PromptUtils.permalink(name);
         this.category = category;
         this.ingredients = new ArrayList<>();
         this.directions = new ArrayList<>();

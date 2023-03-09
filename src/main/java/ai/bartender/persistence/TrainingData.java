@@ -12,7 +12,7 @@ import org.springframework.core.io.Resource;
 import java.util.Arrays;
 
 @Configuration
-public class RepositoryConfiguration {
+public class TrainingData {
 
     @Value("classpath:data/classic.json")
     private Resource classic;

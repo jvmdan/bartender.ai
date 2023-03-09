@@ -1,6 +1,5 @@
 [
   {
-    "id": 51,
     "name": "Mama's Kumquat",
     "permalink": "mamas-kumquat",
     "category": "generated",
@@ -23,7 +22,6 @@
     ]
   },
   {
-    "id": 52,
     "name": "Santa's Salty Sack",
     "permalink": "santas-salty-sack",
     "category": "generated",
@@ -46,7 +44,6 @@
     ]
   },
   {
-    "id": 53,
     "name": "Curse These Metal Hands",
     "permalink": "curse-these-metal-hands",
     "category": "generated",
@@ -68,7 +65,6 @@
     ]
   },
   {
-    "id": 54,
     "name": "The Farmer's Wife",
     "permalink": "the-farmers-wife",
     "category": "generated",
@@ -91,7 +87,6 @@
     ]
   },
   {
-    "id": 55,
     "name": "Gingers Do Have Souls",
     "permalink": "gingers-do-have-souls",
     "category": "generated",
@@ -114,7 +109,6 @@
     ]
   },
   {
-    "id": 56,
     "name": "Danny Dyer's Chocolate Homunculus",
     "permalink": "danny-dyers-chocolate-homunculus",
     "category": "generated",
@@ -137,7 +131,6 @@
     ]
   },
   {
-    "id": 57,
     "name": "Jamie Oliver",
     "permalink": "jamie-oliver",
     "category": "generated",
@@ -160,9 +153,8 @@
     ]
   },
   {
-    "id": 58,
-    "name": "Midnight Snack",
-    "permalink": "midnight-snack",
+    "name": "Donner Kebab",
+    "permalink": "donner-kebab",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -185,7 +177,6 @@
     ]
   },
   {
-    "id": 59,
     "name": "Nacho Cheese",
     "permalink": "nacho-cheese",
     "category": "generated",
@@ -207,6 +198,202 @@
       "Strain the mixture into a glass filled with ice.",
       "Crush some tortilla chips and sprinkle them over the top of the cocktail.",
       "Garnish with a slice of jalapeño pepper and serve immediately."
+    ]
+  },
+  {
+    "name": "Queen Elizabeth II",
+    "permalink": "queen-elizabeth-ii",
+    "category": "generated",
+    "ingredients": [
+      "60ml gin ",
+      "30ml Earl Grey tea (chilled)",
+      "15ml lemon juice ",
+      "15ml honey syrup ",
+      "1 dash of orange bitters ",
+      "1 egg white ",
+      "Edible gold leaf for garnish "
+    ],
+    "directions": [
+      "In a shaker, combine the gin, Earl Grey tea, lemon juice, honey syrup, orange bitters, and egg white. ",
+      "Dry shake (without ice) vigorously for about 10-15 seconds. ",
+      "Add ice to the shaker and shake again for another 10-15 seconds. ",
+      "Strain the mixture into a chilled cocktail glass. ",
+      "Garnish with a small piece of edible gold leaf on top of the foam. "
+    ]
+  },
+  {
+    "name": "The Kanye",
+    "permalink": "the-kanye",
+    "category": "generated",
+    "ingredients": [
+      "60 ml vodka",
+      "30 ml crab juice",
+      "15 ml lemon juice",
+      "15 ml simple syrup",
+      "1/4 tsp wasabi paste",
+      "1 egg white",
+      "2 dashes of bitters",
+      "Crab sticks for garnish"
+    ],
+    "directions": [
+      "In a shaker, combine the vodka, crab juice, lemon juice, simple syrup, wasabi paste, egg white, and bitters.",
+      "Dry shake (without ice) vigorously for about 10 seconds to emulsify the egg white.",
+      "Add ice to the shaker and shake again for about 15 seconds to chill and dilute the cocktail.",
+      "Strain the mixture into a chilled coupe glass.",
+      "Garnish with a skewered crab stick."
+    ]
+  },
+  {
+    "name": "The Donald",
+    "permalink": "the-donald",
+    "category": "generated",
+    "ingredients": [
+      "50 ml vodka",
+      "25 ml orange juice",
+      "15 ml Wotsits cheese powder (available in most supermarkets)",
+      "10 ml lemon juice",
+      "5 ml simple syrup",
+      "A handful of crushed Wotsits (for garnish)"
+    ],
+    "directions": [
+      "In a shaker, combine the vodka, orange juice, Wotsits cheese powder, lemon juice, and simple syrup.",
+      "Add ice and shake vigorously for 10-15 seconds.",
+      "Strain the mixture into a glass filled with ice.",
+      "Garnish with a handful of crushed Wotsits on top."
+    ]
+  },
+  {
+    "name": "Vindaloo",
+    "permalink": "vindaloo",
+    "category": "generated",
+    "ingredients": [
+      "60ml vodka",
+      "30ml mango juice",
+      "30ml lime juice",
+      "15ml ginger syrup",
+      "1/2 tsp cayenne pepper",
+      "1/2 tsp garam masala",
+      "1/2 tsp turmeric",
+      "1/2 tsp cumin",
+      "1/2 tsp coriander",
+      "1/2 tsp cinnamon",
+      "Ice",
+      "Mango slice and chili pepper for garnish"
+    ],
+    "directions": [
+      "In a shaker, combine the vodka, mango juice, lime juice, and ginger syrup.",
+      "Add the cayenne pepper, garam masala, turmeric, cumin, coriander, and cinnamon to the shaker.",
+      "Fill the shaker with ice and shake vigorously for about 15 seconds.",
+      "Strain the cocktail into a glass filled with ice.",
+      "Garnish with a slice of mango and a chili pepper."
+    ]
+  },
+  {
+    "name": "Ronald McDonald",
+    "permalink": "ronald-mcdonald",
+    "category": "generated",
+    "ingredients": [
+      "60ml vodka",
+      "30ml tomato juice",
+      "15ml pickle juice",
+      "15ml mustard syrup*",
+      "1 small piece of cooked ground beef",
+      "1 slice of American cheese",
+      "1 small piece of lettuce",
+      "1 small piece of tomato",
+      "1 small piece of onion",
+      "1 sesame seed bun"
+    ],
+    "directions": [
+      "In a shaker, muddle the small piece of cooked ground beef until it is broken up into small pieces.",
+      "Add the vodka, tomato juice, pickle juice, and mustard syrup to the shaker.",
+      "Fill the shaker with ice and shake vigorously for 10-15 seconds.",
+      "Strain the mixture into a glass filled with ice.",
+      "Garnish with a slice of American cheese, a small piece of lettuce, a small piece of tomato, and a small piece of onion.",
+      "Toast the sesame seed bun and place it on the rim of the glass."
+    ]
+  },
+  {
+    "name": "The Snoop",
+    "permalink": "the-snoop",
+    "category": "generated",
+    "ingredients": [
+      "60 ml gin",
+      "30 ml fresh orange juice",
+      "30 ml fresh grapefruit juice",
+      "15 ml honey syrup",
+      "5 ml liquid smoke",
+      "1 sprig of fresh rosemary",
+      "Ice cubes"
+    ],
+    "directions": [
+      "In a cocktail shaker, combine gin, orange juice, grapefruit juice, and honey syrup.",
+      "Add a handful of ice cubes to the shaker and shake vigorously for about 10 seconds.",
+      "Strain the cocktail into a glass filled with ice cubes.",
+      "Using a dropper, add 5 ml of liquid smoke to the cocktail and stir gently.",
+      "Garnish the cocktail with a sprig of fresh rosemary."
+    ]
+  },
+  {
+    "name": "Kylie Jenner's Big Lips",
+    "permalink": "kylie-jenners-big-lips",
+    "category": "generated",
+    "ingredients": [
+      "50 ml bubblegum-flavored vodka",
+      "25 ml blue curaçao",
+      "25 ml raspberry syrup",
+      "25 ml lemon juice",
+      "1 egg white",
+      "Candy lips (for garnish)"
+    ],
+    "directions": [
+      "In a cocktail shaker, combine the bubblegum-flavored vodka, blue curaçao, raspberry syrup, lemon juice, and egg white.",
+      "Dry shake (without ice) vigorously for about 10 seconds to emulsify the egg white.",
+      "Add ice to the shaker and shake again for about 10 seconds to chill and dilute the cocktail.",
+      "Strain the cocktail into a chilled glass.",
+      "Garnish with candy lips on the rim of the glass.",
+      "Serve and enjoy the sweet and sour taste of Kylie Jenner's Big Lips cocktail!"
+    ]
+  },
+  {
+    "name": "Software Made Me Sad",
+    "permalink": "software-made-me-sad",
+    "category": "generated",
+    "ingredients": [
+      "30 ml dark rum",
+      "15 ml blackberry liqueur",
+      "15 ml coffee liqueur",
+      "10 ml activated charcoal syrup",
+      "5 ml lemon juice",
+      "1 dash of orange bitters",
+      "1 egg white"
+    ],
+    "directions": [
+      "In a cocktail shaker, combine the dark rum, blackberry liqueur, coffee liqueur, activated charcoal syrup, lemon juice, orange bitters, and egg white.",
+      "Dry shake (without ice) vigorously for about 10-15 seconds to emulsify the egg white.",
+      "Add ice to the shaker and shake again for another 10-15 seconds to chill and dilute the drink.",
+      "Strain the mixture into a chilled glass.",
+      "Garnish with a lemon twist or blackberry, if desired."
+    ]
+  },
+  {
+    "name": "Canada Goose",
+    "permalink": "canada-goose",
+    "category": "generated",
+    "ingredients": [
+      "60 ml Canadian whisky",
+      "30 ml fresh lemon juice",
+      "15 ml maple syrup",
+      "1 egg white",
+      "2 dashes of Angostura bitters",
+      "Ice cubes",
+      "Maple flakes (for garnish)"
+    ],
+    "directions": [
+      "In a cocktail shaker, combine the Canadian whisky, fresh lemon juice, maple syrup, egg white, and Angostura bitters.",
+      "Add a handful of ice cubes to the shaker and shake vigorously for about 10 seconds.",
+      "Strain the mixture into a chilled glass.",
+      "Garnish with maple flakes on top."
     ]
   }
 ]

@@ -44,7 +44,11 @@
         <h1>Create a cocktail</h1>
         <p class="lead">Use machine learning (ML) to generate delicious cocktail recipes</p>
         <form action="/result" method="GET">
-            <div>
+            <div th:unless="${recipe} == null">
+                <input style="text-align:center;" name="prompt" id="emptyPrompt" class="form-control"
+                       placeholder="User Prompt" th:value="${recipe.name}"/>
+            </div>
+            <div th:if="${recipe} == null">
                 <input style="text-align:center;" name="prompt" id="prompt" class="form-control"
                        placeholder="User Prompt"/>
             </div>
@@ -65,6 +69,8 @@
             <ol>
                 <li th:each="d: ${recipe.directions}" th:text="${d}"/>
             </ol>
+            <br/>
+            <a th:href="@{|/recipes/generated/${recipe.permalink}|}">View in JSON</a>
             </tbody>
         </div>
     </div>

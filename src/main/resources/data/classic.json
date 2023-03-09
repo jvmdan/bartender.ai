@@ -1042,5 +1042,28 @@
       "Strain the mixture into a glass filled with ice.",
       "Garnish with fresh cranberries and lemon slices."
     ]
+  },
+  {
+    "name": "Pornstar Martini",
+    "permalink": "pornstar-martini",
+    "category": "default",
+    "ingredients": [
+      "60ml vodka",
+      "30ml passion fruit puree",
+      "15ml vanilla syrup",
+      "15ml lime juice",
+      "1 passion fruit, halved",
+      "Prosecco, to top up",
+      "Ice"
+    ],
+    "directions": [
+      "Fill a cocktail shaker with ice.",
+      "Add the vodka, passion fruit puree, vanilla syrup, and lime juice.",
+      "Shake vigorously for 10-15 seconds.",
+      "Strain the mixture into a chilled martini glass.",
+      "Cut one half of the passion fruit into small pieces and add them to the glass.",
+      "Top up with Prosecco.",
+      "Garnish with the other half of the passion fruit."
+    ]
   }
 ]

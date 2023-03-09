@@ -1,4 +1,4 @@
-package ai.bartender.controller;
+package ai.bartender.view;
 
 import ai.bartender.exceptions.NotFoundException;
 import org.springframework.http.HttpStatus;
