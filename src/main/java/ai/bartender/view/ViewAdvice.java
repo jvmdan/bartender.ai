@@ -1,6 +1,7 @@
 package ai.bartender.view;
 
 import ai.bartender.exceptions.NotFoundException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -16,20 +17,23 @@ import org.springframework.web.server.ResponseStatusException;
  * @author Daniel Scarfe
  */
 @ControllerAdvice
+@Slf4j
 class ViewAdvice {
 
     @ExceptionHandler(RuntimeException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     String badRequest(RuntimeException ex, Model model) {
+        log.warn(ex.getMessage());
         model.addAttribute("error", ex.getMessage());
-        return "error";
+        return "view";
     }
 
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     String responseException(Exception ex, Model model) {
+        log.warn(ex.getMessage());
         model.addAttribute("error", ex.getMessage());
-        return "error";
+        return "view";
     }
 
 }

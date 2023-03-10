@@ -71,6 +71,7 @@ public class OpenAIEngine implements Engine<Recipe>, InitializingBean {
 
     @Override
     public boolean moderate(Prompt prompt) {
+        log.info("Asserting \"{}\" meets the content moderation guidelines", prompt.recipeName());
         final ModerationRequest request = ModerationRequest.builder()
                 .model("text-moderation-latest")
                 .input("Create a recipe for a cocktail named \"" + prompt.recipeName() + "\"")
@@ -82,6 +83,7 @@ public class OpenAIEngine implements Engine<Recipe>, InitializingBean {
     @Override
     public Response<Recipe> respond(Prompt prompt) {
         // Convert the user prompt into a natural language request for OpenAI to process.
+        log.info("Processing request to build \"{}\" recipe", prompt.recipeName());
         final String name = prompt.recipeName();
 
         // Construct the user request, providing the pretext to the system to help scope the AI.
@@ -109,7 +111,6 @@ public class OpenAIEngine implements Engine<Recipe>, InitializingBean {
         }
 
         // Return the Response object containing our Recipe instance to the caller.
-        log.info("Created Recipe: \"{}\" [ingredients={}, directions={}]", recipe.getName(), i.size(), d.size());
         return new Response<>(recipe);
     }
 

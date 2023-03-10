@@ -42,7 +42,8 @@
 
     <div class="jumbotron">
         <h1>Create a cocktail</h1>
-        <p class="lead">Use machine learning (ML) to generate delicious cocktail recipes</p>
+        <p class="lead text-danger" th:unless="${error} == null" th:text="${error}"/>
+        <p class="lead" th:if="${error} == null">Use machine learning (ML) to generate delicious cocktail recipes"<p/>
         <form action="/result" method="GET">
             <div th:unless="${recipe} == null">
                 <input style="text-align:center;" name="prompt" id="emptyPrompt" class="form-control"

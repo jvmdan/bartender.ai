@@ -2,7 +2,6 @@ package ai.bartender.view;
 
 import ai.bartender.engine.Engine;
 import ai.bartender.exceptions.EmptyPromptException;
-import ai.bartender.exceptions.NotPermittedException;
 import ai.bartender.exceptions.RecipeCreationException;
 import ai.bartender.model.Prompt;
 import ai.bartender.model.Recipe;
@@ -11,12 +10,10 @@ import ai.bartender.persistence.DataStore;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.net.URLEncoder;
@@ -63,16 +60,22 @@ public class ViewController {
         final Optional<Recipe> existing = repo.findById(id);
         if (fetch && existing.isPresent()) {
             // If there's already a recipe available, we can just fetch it.
-            model.addAttribute("recipe", existing.get());
+            final Recipe result = existing.get();
+            log.info("Fetched Recipe: \"{}\" [ingredients={}, directions={}]",
+                    result.getName(), result.getIngredients().size(), result.getDirections().size());
+            model.addAttribute("recipe", result);
         } else {
             // Create a new recipe & append that to the model instead.
-            final Response<Recipe> r = engine.respond(p);
+            final Response<Recipe> response = engine.respond(p);
+            final Recipe result = response.result();
             if (overwrite && existing.isPresent()) {
                 repo.delete(existing.get());
             } else if (existing.isEmpty()) {
-                repo.save(r.result());
+                repo.save(result);
             }
-            model.addAttribute("recipe", r.result());
+            log.info("Created Recipe: \"{}\" [ingredients={}, directions={}]",
+                    result.getName(), result.getIngredients().size(), result.getDirections().size());
+            model.addAttribute("recipe", result);
         }
         return "view";
     }
@@ -84,12 +87,6 @@ public class ViewController {
         final Optional<Recipe> match = recipes.stream().filter(r -> r.getId().equals(permalink)).findAny();
         if (match.isEmpty()) throw new ResponseStatusException(NOT_FOUND, "Unable to locate " + permalink);
         return Mono.just(match.get());
-    }
-
-    @RequestMapping({"/error", "/error/"})
-    String error(Exception ex, Model model) {
-        model.addAttribute("error", ex.getMessage());
-        return "error";
     }
 
 }
