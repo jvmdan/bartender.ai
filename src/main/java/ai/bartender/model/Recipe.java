@@ -1,6 +1,5 @@
 package ai.bartender.model;
 
-import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -17,24 +16,18 @@ import java.util.Locale;
  * @author Daniel Scarfe
  */
 @NoArgsConstructor
-@Entity
 @Data
 public class Recipe implements Serializable {
 
-    @GeneratedValue
-    @Id
-    @Column(name = "id")
-    private Long id;
+    private String id;
     private String name;
-    private String permalink;
     private String category;
     private List<String> ingredients;
     private List<String> directions;
 
-
     public Recipe(String name, String category) {
+        this.id = permalink(name);
         this.name = normalise(name);
-        this.permalink = permalink(name);
         this.category = category;
         this.ingredients = new ArrayList<>();
         this.directions = new ArrayList<>();

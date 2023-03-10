@@ -1,4 +1,4 @@
-package ai.bartender.repository;
+package ai.bartender.persistence;
 
 import ai.bartender.model.Recipe;
 import com.fasterxml.jackson.core.JsonParser;
@@ -23,7 +23,7 @@ public class InitialConfiguration {
     private Resource generated;
 
     @Bean
-    CommandLineRunner preload(RecipeRepository repository) {
+    CommandLineRunner preload(DataStore<String, Recipe> repository) {
         return args -> {
             // Preload the database with a number of "known-good" classic cocktail recipes.
             final ObjectMapper mapper = new ObjectMapper();

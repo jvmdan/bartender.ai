@@ -70,7 +70,7 @@
                 <li th:each="d: ${recipe.directions}" th:text="${d}"/>
             </ol>
             <br/>
-            <a th:href="@{|/recipes/generated/${recipe.permalink}|}">View in JSON</a>
+            <a th:href="@{|/recipes/generated/${recipe.id}|}">View in JSON</a>
             </tbody>
         </div>
     </div>

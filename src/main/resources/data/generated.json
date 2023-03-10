@@ -1,7 +1,7 @@
 [
   {
     "name": "Mama's Kumquat",
-    "permalink": "mamas-kumquat",
+    "id": "mamas-kumquat",
     "category": "generated",
     "ingredients": [
       "60ml vodka",
@@ -23,7 +23,7 @@
   },
   {
     "name": "Santa's Salty Sack",
-    "permalink": "santas-salty-sack",
+    "id": "santas-salty-sack",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Curse These Metal Hands",
-    "permalink": "curse-these-metal-hands",
+    "id": "curse-these-metal-hands",
     "category": "generated",
     "ingredients": [
       "60 ml bourbon",
@@ -66,7 +66,7 @@
   },
   {
     "name": "The Farmer's Wife",
-    "permalink": "the-farmers-wife",
+    "id": "the-farmers-wife",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -88,7 +88,7 @@
   },
   {
     "name": "Gingers Do Have Souls",
-    "permalink": "gingers-do-have-souls",
+    "id": "gingers-do-have-souls",
     "category": "generated",
     "ingredients": [
       "60 ml ginger beer",
@@ -110,7 +110,7 @@
   },
   {
     "name": "Danny Dyer's Chocolate Homunculus",
-    "permalink": "danny-dyers-chocolate-homunculus",
+    "id": "danny-dyers-chocolate-homunculus",
     "category": "generated",
     "ingredients": [
       "50 ml chocolate liqueur",
@@ -132,7 +132,7 @@
   },
   {
     "name": "Jamie Oliver",
-    "permalink": "jamie-oliver",
+    "id": "jamie-oliver",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -154,7 +154,7 @@
   },
   {
     "name": "Donner Kebab",
-    "permalink": "donner-kebab",
+    "id": "donner-kebab",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -178,7 +178,7 @@
   },
   {
     "name": "Nacho Cheese",
-    "permalink": "nacho-cheese",
+    "id": "nacho-cheese",
     "category": "generated",
     "ingredients": [
       "60 ml tequila",
@@ -202,7 +202,7 @@
   },
   {
     "name": "Queen Elizabeth II",
-    "permalink": "queen-elizabeth-ii",
+    "id": "queen-elizabeth-ii",
     "category": "generated",
     "ingredients": [
       "60ml gin ",
@@ -223,7 +223,7 @@
   },
   {
     "name": "The Kanye",
-    "permalink": "the-kanye",
+    "id": "the-kanye",
     "category": "generated",
     "ingredients": [
       "60 ml vodka",
@@ -245,7 +245,7 @@
   },
   {
     "name": "The Donald",
-    "permalink": "the-donald",
+    "id": "the-donald",
     "category": "generated",
     "ingredients": [
       "50 ml vodka",
@@ -264,7 +264,7 @@
   },
   {
     "name": "Vindaloo",
-    "permalink": "vindaloo",
+    "id": "vindaloo",
     "category": "generated",
     "ingredients": [
       "60ml vodka",
@@ -290,7 +290,7 @@
   },
   {
     "name": "Ronald McDonald",
-    "permalink": "ronald-mcdonald",
+    "id": "ronald-mcdonald",
     "category": "generated",
     "ingredients": [
       "60ml vodka",
@@ -315,7 +315,7 @@
   },
   {
     "name": "The Snoop",
-    "permalink": "the-snoop",
+    "id": "the-snoop",
     "category": "generated",
     "ingredients": [
       "60 ml gin",
@@ -336,7 +336,7 @@
   },
   {
     "name": "Kylie Jenner's Big Lips",
-    "permalink": "kylie-jenners-big-lips",
+    "id": "kylie-jenners-big-lips",
     "category": "generated",
     "ingredients": [
       "50 ml bubblegum-flavored vodka",
@@ -357,7 +357,7 @@
   },
   {
     "name": "Software Made Me Sad",
-    "permalink": "software-made-me-sad",
+    "id": "software-made-me-sad",
     "category": "generated",
     "ingredients": [
       "30 ml dark rum",
@@ -378,7 +378,7 @@
   },
   {
     "name": "Canada Goose",
-    "permalink": "canada-goose",
+    "id": "canada-goose",
     "category": "generated",
     "ingredients": [
       "60 ml Canadian whisky",
@@ -398,7 +398,7 @@
   },
   {
     "name": "Turkish Delight",
-    "permalink": "turkish-delight",
+    "id": "turkish-delight",
     "category": "generated",
     "ingredients": [
       "60ml of Raki (Turkish anise-flavored liquor)",
@@ -419,7 +419,7 @@
   },
   {
     "name": "Kit Kat Martini",
-    "permalink": "kit-kat-martini",
+    "id": "kit-kat-martini",
     "category": "generated",
     "ingredients": [
       "50ml vodka",
@@ -438,7 +438,7 @@
   },
   {
     "name": "Mushroom Soup",
-    "permalink": "mushroom-soup",
+    "id": "mushroom-soup",
     "category": "generated",
     "ingredients": [
       "60 ml mushroom-infused gin",
@@ -459,7 +459,7 @@
   },
   {
     "name": "Viva La France",
-    "permalink": "viva-la-france",
+    "id": "viva-la-france",
     "category": "generated",
     "ingredients": [
       "60 ml of cognac",
@@ -480,7 +480,7 @@
   },
   {
     "name": "A Bloody Mess",
-    "permalink": "a-bloody-mess",
+    "id": "a-bloody-mess",
     "category": "generated",
     "ingredients": [
       "60ml tomato juice",

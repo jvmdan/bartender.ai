@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Mojito",
-    "permalink": "mojito",
+    "id": "mojito",
     "category": "classic",
     "ingredients": [
       "60ml white rum",
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "name": "White Russian",
-    "permalink": "white-russian",
+    "id": "white-russian",
     "category": "classic",
     "ingredients": [
       "50ml vodka",
@@ -43,7 +43,7 @@
   {
     "id": 3,
     "name": "Old Fashioned",
-    "permalink": "old-fashioned",
+    "id": "old-fashioned",
     "category": "classic",
     "ingredients": [
       "60 ml bourbon whiskey",
@@ -65,7 +65,7 @@
   {
     "id": 4,
     "name": "Sex On The Beach",
-    "permalink": "sex-on-the-beach",
+    "id": "sex-on-the-beach",
     "category": "classic",
     "ingredients": [
       "50ml vodka",
@@ -86,7 +86,7 @@
   {
     "id": 5,
     "name": "Espresso Martini",
-    "permalink": "espresso-martini",
+    "id": "espresso-martini",
     "category": "classic",
     "ingredients": [
       "50ml vodka",
@@ -108,7 +108,7 @@
   {
     "id": 6,
     "name": "New York Sour",
-    "permalink": "new-york-sour",
+    "id": "new-york-sour",
     "category": "classic",
     "ingredients": [
       "60 ml whiskey",
@@ -128,7 +128,7 @@
   {
     "id": 7,
     "name": "Aperol Spritz",
-    "permalink": "aperol-spritz",
+    "id": "aperol-spritz",
     "category": "classic",
     "ingredients": [
       "60 ml Aperol",
@@ -147,7 +147,7 @@
   {
     "id": 8,
     "name": "Martini",
-    "permalink": "martini",
+    "id": "martini",
     "category": "classic",
     "ingredients": [
       "60ml gin",
@@ -166,7 +166,7 @@
   {
     "id": 9,
     "name": "Whiskey Sour",
-    "permalink": "whiskey-sour",
+    "id": "whiskey-sour",
     "category": "classic",
     "ingredients": [
       "60 ml whiskey",
@@ -186,7 +186,7 @@
   {
     "id": 10,
     "name": "Tequila Sunrise",
-    "permalink": "tequila-sunrise",
+    "id": "tequila-sunrise",
     "category": "classic",
     "ingredients": [
       "60 ml tequila",
@@ -207,7 +207,7 @@
   {
     "id": 11,
     "name": "Manhattan",
-    "permalink": "manhattan",
+    "id": "manhattan",
     "category": "classic",
     "ingredients": [
       "60 ml whiskey",
@@ -228,7 +228,7 @@
   {
     "id": 12,
     "name": "Mimosa",
-    "permalink": "mimosa",
+    "id": "mimosa",
     "category": "classic",
     "ingredients": [
       "90 ml champagne",
@@ -249,7 +249,7 @@
   {
     "id": 13,
     "name": "Black Russian",
-    "permalink": "black-russian",
+    "id": "black-russian",
     "category": "classic",
     "ingredients": [
       "60ml vodka",
@@ -266,7 +266,7 @@
   {
     "id": 14,
     "name": "Snowball",
-    "permalink": "snowball",
+    "id": "snowball",
     "category": "classic",
     "ingredients": [
       "50 ml vodka",
@@ -288,7 +288,7 @@
   {
     "id": 15,
     "name": "Cosmopolitan",
-    "permalink": "cosmopolitan",
+    "id": "cosmopolitan",
     "category": "classic",
     "ingredients": [
       "45 ml vodka",
@@ -310,7 +310,7 @@
   {
     "id": 16,
     "name": "Negroni",
-    "permalink": "negroni",
+    "id": "negroni",
     "category": "classic",
     "ingredients": [
       "30 ml gin",
@@ -329,7 +329,7 @@
   {
     "id": 17,
     "name": "Tom Collins",
-    "permalink": "tom-collins",
+    "id": "tom-collins",
     "category": "classic",
     "ingredients": [
       "60 ml gin",
@@ -350,7 +350,7 @@
   {
     "id": 18,
     "name": "Cuba Libre",
-    "permalink": "cuba-libre",
+    "id": "cuba-libre",
     "category": "classic",
     "ingredients": [
       "60 ml white rum",
@@ -369,7 +369,7 @@
   {
     "id": 19,
     "name": "Daiquiri",
-    "permalink": "daiquiri",
+    "id": "daiquiri",
     "category": "classic",
     "ingredients": [
       "60ml white rum",
@@ -389,7 +389,7 @@
   {
     "id": 20,
     "name": "Screwdriver",
-    "permalink": "screwdriver",
+    "id": "screwdriver",
     "category": "classic",
     "ingredients": [
       "60 ml vodka",
@@ -407,7 +407,7 @@
   {
     "id": 21,
     "name": "Sazerac",
-    "permalink": "sazerac",
+    "id": "sazerac",
     "category": "classic",
     "ingredients": [
       "60 ml rye whiskey",
@@ -428,7 +428,7 @@
   {
     "id": 22,
     "name": "Paloma",
-    "permalink": "paloma",
+    "id": "paloma",
     "category": "classic",
     "ingredients": [
       "60 ml tequila",
@@ -449,7 +449,7 @@
   {
     "id": 23,
     "name": "Moscow Mule",
-    "permalink": "moscow-mule",
+    "id": "moscow-mule",
     "category": "classic",
     "ingredients": [
       "60 ml vodka",
@@ -469,7 +469,7 @@
   {
     "id": 24,
     "name": "Sidecar",
-    "permalink": "sidecar",
+    "id": "sidecar",
     "category": "classic",
     "ingredients": [
       "45ml cognac",
@@ -489,7 +489,7 @@
   {
     "id": 25,
     "name": "Martinez",
-    "permalink": "martinez",
+    "id": "martinez",
     "category": "classic",
     "ingredients": [
       "60ml gin",
@@ -509,7 +509,7 @@
   {
     "id": 26,
     "name": "Pisco Sour",
-    "permalink": "pisco-sour",
+    "id": "pisco-sour",
     "category": "classic",
     "ingredients": [
       "60 ml Pisco",
@@ -532,7 +532,7 @@
   {
     "id": 27,
     "name": "French 75",
-    "permalink": "french-75",
+    "id": "french-75",
     "category": "classic",
     "ingredients": [
       "45 ml gin",
@@ -553,7 +553,7 @@
   {
     "id": 28,
     "name": "Mint Julep",
-    "permalink": "mint-julep",
+    "id": "mint-julep",
     "category": "classic",
     "ingredients": [
       "60ml bourbon",
@@ -571,7 +571,7 @@
   {
     "id": 29,
     "name": "Last Word",
-    "permalink": "last-word",
+    "id": "last-word",
     "category": "classic",
     "ingredients": [
       "30 ml gin",
@@ -593,7 +593,7 @@
   {
     "id": 30,
     "name": "Irish Coffee",
-    "permalink": "irish-coffee",
+    "id": "irish-coffee",
     "category": "classic",
     "ingredients": [
       "50ml Irish whiskey",
@@ -613,7 +613,7 @@
   {
     "id": 31,
     "name": "Gin Fizz",
-    "permalink": "gin-fizz",
+    "id": "gin-fizz",
     "category": "classic",
     "ingredients": [
       "60 ml gin",
@@ -635,7 +635,7 @@
   {
     "id": 32,
     "name": "Bloody Mary",
-    "permalink": "bloody-mary",
+    "id": "bloody-mary",
     "category": "classic",
     "ingredients": [
       "60 ml vodka",
@@ -660,7 +660,7 @@
   {
     "id": 33,
     "name": "Gimlet",
-    "permalink": "gimlet",
+    "id": "gimlet",
     "category": "classic",
     "ingredients": [
       "60ml gin",
@@ -680,7 +680,7 @@
   {
     "id": 34,
     "name": "Margarita",
-    "permalink": "margarita",
+    "id": "margarita",
     "category": "classic",
     "ingredients": [
       "60 ml tequila",
@@ -702,7 +702,7 @@
   {
     "id": 35,
     "name": "Boulevardier",
-    "permalink": "boulevardier",
+    "id": "boulevardier",
     "category": "classic",
     "ingredients": [
       "30 ml bourbon whiskey",
@@ -721,7 +721,7 @@
   {
     "id": 36,
     "name": "Dark & Stormy",
-    "permalink": "dark-and-stormy",
+    "id": "dark-and-stormy",
     "category": "classic",
     "ingredients": [
       "60 ml dark rum",
@@ -743,7 +743,7 @@
   {
     "id": 37,
     "name": "Long Island Iced Tea",
-    "permalink": "long-island-iced-tea",
+    "id": "long-island-iced-tea",
     "category": "classic",
     "ingredients": [
       "30ml vodka",
@@ -770,7 +770,7 @@
   {
     "id": 38,
     "name": "Kir Royale",
-    "permalink": "kir-royale",
+    "id": "kir-royale",
     "category": "classic",
     "ingredients": [
       "30 ml crème de cassis",
@@ -788,7 +788,7 @@
   {
     "id": 39,
     "name": "Mai Tai",
-    "permalink": "mai-tai",
+    "id": "mai-tai",
     "category": "classic",
     "ingredients": [
       "60ml dark rum",
@@ -809,7 +809,7 @@
   {
     "id": 40,
     "name": "Bellini",
-    "permalink": "bellini",
+    "id": "bellini",
     "category": "classic",
     "ingredients": [
       "100ml Prosecco",
@@ -829,7 +829,7 @@
   {
     "id": 41,
     "name": "Pina Colada",
-    "permalink": "pina-colada",
+    "id": "pina-colada",
     "category": "classic",
     "ingredients": [
       "60ml white rum",
@@ -850,7 +850,7 @@
   {
     "id": 42,
     "name": "Greyhound",
-    "permalink": "greyhound",
+    "id": "greyhound",
     "category": "classic",
     "ingredients": [
       "60ml grapefruit juice",
@@ -869,7 +869,7 @@
   {
     "id": 43,
     "name": "Strawberry Mojito",
-    "permalink": "strawberry-mojito",
+    "id": "strawberry-mojito",
     "category": "classic",
     "ingredients": [
       "60 ml white rum",
@@ -893,7 +893,7 @@
   {
     "id": 44,
     "name": "Passionfruit Mojito",
-    "permalink": "passionfruit-mojito",
+    "id": "passionfruit-mojito",
     "category": "classic",
     "ingredients": [
       "60 ml white rum",
@@ -916,7 +916,7 @@
   {
     "id": 45,
     "name": "Hazelnut Espresso Martini",
-    "permalink": "hazelnut-espresso-martini",
+    "id": "hazelnut-espresso-martini",
     "category": "classic",
     "ingredients": [
       "45ml vodka",
@@ -938,7 +938,7 @@
   {
     "id": 46,
     "name": "Cherry Sour",
-    "permalink": "cherry-sour",
+    "id": "cherry-sour",
     "category": "classic",
     "ingredients": [
       "60 ml of gin",
@@ -960,7 +960,7 @@
   {
     "id": 47,
     "name": "Amaretto Cherry Sour",
-    "permalink": "amaretto-cherry-sour",
+    "id": "amaretto-cherry-sour",
     "category": "classic",
     "ingredients": [
       "50 ml amaretto liqueur",
@@ -981,7 +981,7 @@
   {
     "id": 48,
     "name": "Bramble",
-    "permalink": "bramble",
+    "id": "bramble",
     "category": "classic",
     "ingredients": [
       "60 ml gin",
@@ -1002,7 +1002,7 @@
   {
     "id": 49,
     "name": "Spicy Paloma",
-    "permalink": "spicy-paloma",
+    "id": "spicy-paloma",
     "category": "classic",
     "ingredients": [
       "60 ml tequila",
@@ -1025,7 +1025,7 @@
   {
     "id": 50,
     "name": "Cranberry Whiskey Sour",
-    "permalink": "cranberry-whiskey-sour",
+    "id": "cranberry-whiskey-sour",
     "category": "classic",
     "ingredients": [
       "60 ml whiskey",
@@ -1045,7 +1045,7 @@
   },
   {
     "name": "Pornstar Martini",
-    "permalink": "pornstar-martini",
+    "id": "pornstar-martini",
     "category": "default",
     "ingredients": [
       "60ml vodka",
