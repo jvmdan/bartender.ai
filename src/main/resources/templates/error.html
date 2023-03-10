@@ -42,7 +42,7 @@
 
     <div class="jumbotron">
         <h1>Create a cocktail</h1>
-        <p class="lead text-danger"><span th:text="${error.message}"/>. Try again?</p>
+        <p class="lead text-danger" th:text="${error}"/>
         <form action="/result" method="GET">
             <div>
                 <input style="text-align:center;" name="prompt" id="prompt" class="form-control"

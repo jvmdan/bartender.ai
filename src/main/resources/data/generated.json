@@ -501,5 +501,47 @@
       "Strain the cocktail into the glass.",
       "Garnish with a celery stick or a slice of bacon."
     ]
+  },
+  {
+    "id": "the-big-lebowski",
+    "name": "The Big Lebowski",
+    "category": "generated",
+    "ingredients": [
+      "60ml vodka",
+      "30ml Kahlua",
+      "30ml heavy cream",
+      "1 tsp matcha powder",
+      "1 tsp wasabi paste",
+      "Ice cubes"
+    ],
+    "directions": [
+      "In a cocktail shaker, combine vodka, Kahlua, heavy cream, matcha powder, and wasabi paste.",
+      "Add ice cubes to the shaker and shake vigorously for 10-15 seconds.",
+      "Strain the mixture into a chilled glass.",
+      "Garnish with a sprinkle of matcha powder and a small dollop of wasabi paste on top.",
+      "Serve and enjoy!"
+    ]
+  },
+  {
+    "id": "chicken-run",
+    "name": "Chicken Run",
+    "category": "generated",
+    "ingredients": [
+      "50 ml chicken broth",
+      "20 ml soy sauce",
+      "10 ml honey",
+      "10 ml lemon juice",
+      "2 dashes of hot sauce",
+      "1 egg white",
+      "1 sprig of rosemary",
+      "1 small piece of ginger"
+    ],
+    "directions": [
+      "In a cocktail shaker, add the chicken broth, soy sauce, honey, lemon juice, hot sauce, and egg white.",
+      "Muddle the rosemary and ginger together in the shaker.",
+      "Add ice to the shaker and shake vigorously for 10-15 seconds.",
+      "Strain the cocktail into a chilled glass.",
+      "Garnish with a small sprig of rosemary and a piece of ginger."
+    ]
   }
 ]

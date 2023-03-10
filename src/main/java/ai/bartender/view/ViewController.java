@@ -11,9 +11,11 @@ import ai.bartender.persistence.DataStore;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -22,6 +24,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
+
+import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 @Controller
 @RequiredArgsConstructor
@@ -73,26 +77,19 @@ public class ViewController {
         return "view";
     }
 
-
-    @GetMapping({"/recipes", "/recipes/"})
+    @GetMapping({"/recipes/{permalink}", "/recipes/{permalink}/"})
     @ResponseBody
-    Mono<Void> getAll() {
-        throw new NotPermittedException("/recipes/");
-    }
-
-    @GetMapping({"/recipes/{category}", "/recipes/{category}/"})
-    @ResponseBody
-    Flux<Recipe> getCategory(@PathVariable String category) {
-        final List<Recipe> recipes = repo.findAll().stream().filter(r -> r.getCategory().equals(category)).toList();
-        return Flux.fromIterable(recipes);
-    }
-
-    @GetMapping({"/recipes/{category}/{permalink}", "/recipes/{category}/{permalink}/"})
-    @ResponseBody
-    Mono<Recipe> getByPermalink(@PathVariable String category, @PathVariable String permalink) {
-        final List<Recipe> recipes = repo.findAll().stream().filter(r -> r.getCategory().equals(category)).toList();
+    Mono<Recipe> getByPermalink(@PathVariable String permalink) {
+        final List<Recipe> recipes = repo.findAll().stream().filter(r -> r.getCategory().equals("generated")).toList();
         final Optional<Recipe> match = recipes.stream().filter(r -> r.getId().equals(permalink)).findAny();
-        return Mono.justOrEmpty(match);
+        if (match.isEmpty()) throw new ResponseStatusException(NOT_FOUND, "Unable to locate " + permalink);
+        return Mono.just(match.get());
+    }
+
+    @RequestMapping({"/error", "/error/"})
+    String error(Exception ex, Model model) {
+        model.addAttribute("error", ex.getMessage());
+        return "error";
     }
 
 }

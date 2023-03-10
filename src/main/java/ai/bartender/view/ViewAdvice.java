@@ -21,23 +21,15 @@ class ViewAdvice {
     @ExceptionHandler(RuntimeException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     String badRequest(RuntimeException ex, Model model) {
-        model.addAttribute("error", ex);
+        model.addAttribute("error", ex.getMessage());
         return "error";
     }
 
-    @ExceptionHandler(NotFoundException.class)
+    @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    String notFound(NotFoundException ex, Model model) {
-        model.addAttribute("error", ex);
+    String responseException(Exception ex, Model model) {
+        model.addAttribute("error", ex.getMessage());
         return "error";
     }
-
-    @ExceptionHandler(ResponseStatusException.class)
-    @ResponseStatus(HttpStatus.NOT_FOUND)
-    String responseException(ResponseStatusException ex, Model model) {
-        model.addAttribute("error", ex);
-        return "error";
-    }
-
 
 }
